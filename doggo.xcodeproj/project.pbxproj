@@ -24,6 +24,14 @@
 		E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C5230BD53000784315 /* GroomViewController.swift */; };
 		E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C7230BD54D00784315 /* CheckUpViewController.swift */; };
 		E6F289CA230BD86800784315 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289C9230BD86800784315 /* OnBoarding.storyboard */; };
+		E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CB230BDC9A00784315 /* DogModel.swift */; };
+		E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CD230BDCA700784315 /* GroomModel.swift */; };
+		E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CF230BDCAF00784315 /* FoodModel.swift */; };
+		E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D1230BDCB700784315 /* CheckUpModel.swift */; };
+		E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D3230BDCC300784315 /* TrainModel.swift */; };
+		E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D5230BDCD600784315 /* CoreDataHelper.swift */; };
+		E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D7230BDCEA00784315 /* VideoHelper.swift */; };
+		E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D9230BDD1C00784315 /* NotificationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +54,14 @@
 		E6F289C5230BD53000784315 /* GroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomViewController.swift; sourceTree = "<group>"; };
 		E6F289C7230BD54D00784315 /* CheckUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpViewController.swift; sourceTree = "<group>"; };
 		E6F289C9230BD86800784315 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		E6F289CB230BDC9A00784315 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
+		E6F289CD230BDCA700784315 /* GroomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomModel.swift; sourceTree = "<group>"; };
+		E6F289CF230BDCAF00784315 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		E6F289D1230BDCB700784315 /* CheckUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpModel.swift; sourceTree = "<group>"; };
+		E6F289D3230BDCC300784315 /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
+		E6F289D5230BDCD600784315 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		E6F289D7230BDCEA00784315 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		E6F289D9230BDD1C00784315 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +97,6 @@
 				E6F289B4230BCF8300784315 /* Storyboard */,
 				E6F289B3230BCF7600784315 /* Helper */,
 				E6F289B2230BCF6100784315 /* Controller */,
-				E6F289B1230BCF5C00784315 /* View */,
 				E6F289B0230BCF1D00784315 /* Model */,
 				E6F2899B230B878600784315 /* AppDelegate.swift */,
 				E6F2899D230B878600784315 /* ViewController.swift */,
@@ -95,15 +110,13 @@
 		E6F289B0230BCF1D00784315 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E6F289CB230BDC9A00784315 /* DogModel.swift */,
+				E6F289CD230BDCA700784315 /* GroomModel.swift */,
+				E6F289CF230BDCAF00784315 /* FoodModel.swift */,
+				E6F289D1230BDCB700784315 /* CheckUpModel.swift */,
+				E6F289D3230BDCC300784315 /* TrainModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E6F289B1230BCF5C00784315 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E6F289B2230BCF6100784315 /* Controller */ = {
@@ -126,6 +139,9 @@
 		E6F289B3230BCF7600784315 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E6F289D5230BDCD600784315 /* CoreDataHelper.swift */,
+				E6F289D7230BDCEA00784315 /* VideoHelper.swift */,
+				E6F289D9230BDD1C00784315 /* NotificationHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -212,18 +228,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */,
 				E6F2899E230B878600784315 /* ViewController.swift in Sources */,
+				E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */,
+				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
 				E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */,
 				E6F289BC230BD41000784315 /* RegisterViewController.swift in Sources */,
+				E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */,
 				E6F2899C230B878600784315 /* AppDelegate.swift in Sources */,
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
 				E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */,
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,
 				E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */,
+				E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */,
 				E6F289C4230BD52700784315 /* WeightViewController.swift in Sources */,
 				E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */,
+				E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */,
 				E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */,
+				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,
 				E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */,
+				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
 				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
