@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,174 +11,174 @@
     </dependencies>
     <scenes>
         <!--Choose Breed Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="J9A-l2-Sf7">
             <objects>
-                <viewController id="01J-lp-oVM" userLabel="Choose Breed Controller" customClass="ChooseBreedViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="BCx-5s-vax" userLabel="Choose Breed Controller" customClass="ChooseBreedViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ab4-xk-KSc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="iB1-Ow-Lhk"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSn-Hg-caS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-93" y="2002"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="1iY-Us-dw4">
+        <scene sceneID="ssi-3e-vYZ">
             <objects>
-                <tabBarController id="DOx-Ck-O3k" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ewg-ty-pFJ">
+                <tabBarController id="iJn-60-MAL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ais-qQ-m2C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RPo-vz-dNj" kind="relationship" relationship="viewControllers" id="aPe-EZ-ioB"/>
-                        <segue destination="qR1-lw-OAm" kind="relationship" relationship="viewControllers" id="klb-md-yfq"/>
-                        <segue destination="IC0-aP-Jrg" kind="relationship" relationship="viewControllers" id="KPI-kM-IlU"/>
+                        <segue destination="Amq-mf-nbG" kind="relationship" relationship="viewControllers" id="994-hh-pf7"/>
+                        <segue destination="GGw-LP-98c" kind="relationship" relationship="viewControllers" id="gfa-uZ-eGk"/>
+                        <segue destination="d1J-oV-7rr" kind="relationship" relationship="viewControllers" id="tNL-As-gTH"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bnU-Yi-ubZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BW7-JF-HGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1762" y="2002"/>
         </scene>
         <!--Register Controller-->
-        <scene sceneID="9Hc-8D-MmL">
+        <scene sceneID="b66-Q3-8i5">
             <objects>
-                <viewController id="bRT-jL-vy5" userLabel="Register Controller" customClass="RegisterViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6Vs-Ov-axd">
+                <viewController id="yuR-l5-UEm" userLabel="Register Controller" customClass="RegisterViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GiW-zh-CmU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Uwl-vw-31J"/>
+                        <viewLayoutGuide key="safeArea" id="hjW-Na-kac"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nr3-2S-pGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Uu-Oj-wae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="836" y="2002"/>
         </scene>
         <!--Dashboard Controller-->
-        <scene sceneID="vW0-Ir-toP">
+        <scene sceneID="aI8-Pl-SgA">
             <objects>
-                <viewController id="RPo-vz-dNj" userLabel="Dashboard Controller" customClass="DashboardViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xrK-9Y-Urw">
+                <viewController id="Amq-mf-nbG" userLabel="Dashboard Controller" customClass="DashboardViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="taO-3w-YFE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5wb-bp-xvK"/>
+                        <viewLayoutGuide key="safeArea" id="Ou8-5z-5zU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="yKq-8h-9nx"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Kao-fl-jrH"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qZ9-dB-Qs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40I-eu-vJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2570" y="1145"/>
         </scene>
         <!--Add New Dog Controller-->
-        <scene sceneID="NPa-gB-8Tc">
+        <scene sceneID="Wa9-nw-2J6">
             <objects>
-                <viewController id="qYq-Xj-50f" userLabel="Add New Dog Controller" customClass="AddNewDogViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IOD-7f-OP0">
+                <viewController id="ehv-Y7-L3U" userLabel="Add New Dog Controller" customClass="AddNewDogViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J1g-cH-oSN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6nM-wi-ru1"/>
+                        <viewLayoutGuide key="safeArea" id="sTO-R5-QCy"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mht-SU-fpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUU-Fa-VG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3522" y="824"/>
         </scene>
         <!--Health Controller-->
-        <scene sceneID="g1e-o8-z5l">
+        <scene sceneID="Thv-uk-sm2">
             <objects>
-                <viewController id="qR1-lw-OAm" userLabel="Health Controller" customClass="HealthViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UoE-cs-pXK">
+                <viewController id="GGw-LP-98c" userLabel="Health Controller" customClass="HealthViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnm-aD-81v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hrK-Ce-CTw"/>
+                        <viewLayoutGuide key="safeArea" id="4pA-jT-iZV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HCf-ml-xRy"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="fxu-OT-xTx"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UfN-aU-Stu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gw-ud-Mcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2570" y="2002"/>
         </scene>
         <!--Food Controller-->
-        <scene sceneID="hEv-Md-bgU">
+        <scene sceneID="I0s-Hj-wxh">
             <objects>
-                <viewController id="6VL-U8-4Jr" userLabel="Food Controller" customClass="FoodViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TMQ-gy-1QR">
+                <viewController id="gcz-p9-npZ" userLabel="Food Controller" customClass="FoodViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NNH-Pi-UbO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="25k-Sy-sUY"/>
+                        <viewLayoutGuide key="safeArea" id="jzA-8R-KUX"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qmZ-gp-xdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="it3-lJ-zbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4438" y="1305"/>
         </scene>
         <!--Weight Controller-->
-        <scene sceneID="9U0-u8-A99">
+        <scene sceneID="93W-0U-Edf">
             <objects>
-                <viewController id="ogz-um-9P2" userLabel="Weight Controller" customClass="WeightViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aTZ-x8-Hbj">
+                <viewController id="XPc-iA-mvK" userLabel="Weight Controller" customClass="WeightViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFP-jU-5oJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="4Se-RA-biY"/>
+                        <viewLayoutGuide key="safeArea" id="65x-pf-QFt"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G9z-gY-mz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGe-tn-tfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4438" y="1977"/>
         </scene>
         <!--Groom Controller-->
-        <scene sceneID="RAY-VY-GUK">
+        <scene sceneID="FoW-yW-Izj">
             <objects>
-                <viewController id="27X-03-R6a" userLabel="Groom Controller" customClass="GroomViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ppC-5j-49V">
+                <viewController id="rCa-sO-6QO" userLabel="Groom Controller" customClass="GroomViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0M7-S4-Rol">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="l4L-6l-Yww"/>
+                        <viewLayoutGuide key="safeArea" id="4Cx-hn-chQ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fGy-eu-DkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaO-3F-RKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4438" y="2667"/>
         </scene>
         <!--Check Up Controller-->
-        <scene sceneID="3rG-Cb-3wL">
+        <scene sceneID="eHD-Oa-qDg">
             <objects>
-                <viewController id="Xtx-QU-y9u" userLabel="Check Up Controller" customClass="CheckUpViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="afI-sG-SF6">
+                <viewController id="pzi-JQ-kZ0" userLabel="Check Up Controller" customClass="CheckUpViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ePE-kQ-A4c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Iih-uK-wjR"/>
+                        <viewLayoutGuide key="safeArea" id="Ki4-j0-FMw"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NvG-Nl-vzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lpp-GM-iiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4438" y="3360"/>
         </scene>
         <!--Train Controller-->
-        <scene sceneID="kbl-PW-5SU">
+        <scene sceneID="P91-vi-OOw">
             <objects>
-                <viewController id="IC0-aP-Jrg" userLabel="Train Controller" customClass="TrainViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UMG-fJ-4zl">
+                <viewController id="d1J-oV-7rr" userLabel="Train Controller" customClass="TrainViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="asp-zb-kbD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="AAv-BD-4lN"/>
+                        <viewLayoutGuide key="safeArea" id="qfj-cg-LBn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1pa-Y4-UcS"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="lHk-xo-njS"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwl-si-Ghp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46T-Y7-jFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2570" y="2831"/>
         </scene>
