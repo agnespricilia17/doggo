@@ -23,6 +23,7 @@
 		E6F289C4230BD52700784315 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C3230BD52700784315 /* WeightViewController.swift */; };
 		E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C5230BD53000784315 /* GroomViewController.swift */; };
 		E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C7230BD54D00784315 /* CheckUpViewController.swift */; };
+		E6F289CA230BD86800784315 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289C9230BD86800784315 /* OnBoarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E6F289C3230BD52700784315 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		E6F289C5230BD53000784315 /* GroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomViewController.swift; sourceTree = "<group>"; };
 		E6F289C7230BD54D00784315 /* CheckUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpViewController.swift; sourceTree = "<group>"; };
+		E6F289C9230BD86800784315 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				E6F2899F230B878600784315 /* Main.storyboard */,
 				E6F289A7230B878700784315 /* LaunchScreen.storyboard */,
+				E6F289C9230BD86800784315 /* OnBoarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
 				E6F289A1230B878600784315 /* Main.storyboard in Resources */,
+				E6F289CA230BD86800784315 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
