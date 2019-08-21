@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C524EFBA230CEF1400EAE665 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFB9230CEF1400EAE665 /* OnboardingViewController.swift */; };
+		C524EFBE230CF09D00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFBD230CF09D00EAE665 /* Slide.swift */; };
+		C524EFC0230CF13900EAE665 /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C524EFBF230CF13900EAE665 /* SlideView.xib */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
 		E6F2899E230B878600784315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899D230B878600784315 /* ViewController.swift */; };
 		E6F289A1230B878600784315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F2899F230B878600784315 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C524EFB9230CEF1400EAE665 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C524EFBD230CF09D00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		C524EFBF230CF13900EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
 		E6F28998230B878600784315 /* doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2899B230B878600784315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6F2899D230B878600784315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 				E6F289C5230BD53000784315 /* GroomViewController.swift */,
 				E6F289C7230BD54D00784315 /* CheckUpViewController.swift */,
 				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
+				C524EFB9230CEF1400EAE665 /* OnboardingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				E6F2899F230B878600784315 /* Main.storyboard */,
+				C524EFBD230CF09D00EAE665 /* Slide.swift */,
+				C524EFBF230CF13900EAE665 /* SlideView.xib */,
 				E6F289A7230B878700784315 /* LaunchScreen.storyboard */,
 				E6F289C9230BD86800784315 /* OnBoarding.storyboard */,
 			);
@@ -217,6 +226,7 @@
 				E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
 				E6F289A1230B878600784315 /* Main.storyboard in Resources */,
+				C524EFC0230CF13900EAE665 /* SlideView.xib in Resources */,
 				E6F289CA230BD86800784315 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */,
+				C524EFBE230CF09D00EAE665 /* Slide.swift in Sources */,
 				E6F2899E230B878600784315 /* ViewController.swift in Sources */,
 				E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */,
 				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
@@ -237,6 +248,7 @@
 				E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */,
 				E6F2899C230B878600784315 /* AppDelegate.swift in Sources */,
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
+				C524EFBA230CEF1400EAE665 /* OnboardingViewController.swift in Sources */,
 				E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */,
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,
 				E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */,
