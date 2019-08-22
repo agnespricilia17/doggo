@@ -9,11 +9,17 @@
 import UIKit
 
 class ChooseBreedViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        nextButton.layer.cornerRadius = nextButton.frame.size.height/2
+        nextButton.clipsToBounds = true
+        nextButton.layer.borderWidth = 1
+        nextButton.layer.borderColor = UIColor.blue.cgColor
     }
     
 
