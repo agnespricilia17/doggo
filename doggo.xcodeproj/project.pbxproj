@@ -138,6 +138,7 @@
 		E6F289D5230BDCD600784315 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		E6F289D7230BDCEA00784315 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		E6F289D9230BDD1C00784315 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		E6F289DC230CF5B300784315 /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jaapokki-Regular.otf"; path = "../../../../Downloads/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +215,7 @@
 		E6F2899A230B878600784315 /* doggo */ = {
 			isa = PBXGroup;
 			children = (
+				E6F289DB230CF58C00784315 /* Font */,
 				E6F289B4230BCF8300784315 /* Storyboard */,
 				E6F289B3230BCF7600784315 /* Helper */,
 				E6F289B2230BCF6100784315 /* Controller */,
@@ -277,6 +279,14 @@
 				E6F289C9230BD86800784315 /* OnBoarding.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289DB230CF58C00784315 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E6F289DC230CF5B300784315 /* Jaapokki-Regular.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,6 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+
 				DEVELOPMENT_TEAM = 6ZFS657T4Z;
 				INFOPLIST_FILE = doggo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
