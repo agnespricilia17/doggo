@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
+		9211A1F5230EFB8B00614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1F3230EFB8B00614EED /* LaunchScreen.storyboard */; };
+		9211A1F8230EFBAF00614EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1F7230EFBAF00614EED /* Main.storyboard */; };
+		9211A1FA230EFC9700614EED /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1F9230EFC9700614EED /* Dashboard.storyboard */; };
+		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
+		9211A1FE230EFCB600614EED /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FD230EFCB600614EED /* Train.storyboard */; };
 		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
-		E6F2899E230B878600784315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899D230B878600784315 /* ViewController.swift */; };
 		E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6F289A2230B878600784315 /* doggo.xcdatamodeld */; };
 		E6F289A6230B878700784315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F289A5230B878700784315 /* Assets.xcassets */; };
-		E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289A7230B878700784315 /* LaunchScreen.storyboard */; };
 		E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B5230BD3DE00784315 /* DashboardViewController.swift */; };
 		E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B7230BD3ED00784315 /* HealthViewController.swift */; };
 		E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B9230BD3FB00784315 /* TrainViewController.swift */; };
@@ -35,16 +39,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		9211A1F3230EFB8B00614EED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9211A1F7230EFBAF00614EED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9211A1F9230EFC9700614EED /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
+		9211A1FD230EFCB600614EED /* Train.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
 		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
 		E6F28998230B878600784315 /* doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2899B230B878600784315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6F2899D230B878600784315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6F289A0230B878600784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6F289A3230B878600784315 /* doggo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doggo.xcdatamodel; sourceTree = "<group>"; };
 		E6F289A5230B878700784315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6F289A8230B878700784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6F289AA230B878700784315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F289B5230BD3DE00784315 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E6F289B7230BD3ED00784315 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +110,6 @@
 				E6F289B2230BCF6100784315 /* Controller */,
 				E6F289B0230BCF1D00784315 /* Model */,
 				E6F2899B230B878600784315 /* AppDelegate.swift */,
-				E6F2899D230B878600784315 /* ViewController.swift */,
 				E6F289A5230B878700784315 /* Assets.xcassets */,
 				E6F289AA230B878700784315 /* Info.plist */,
 				E6F289A2230B878600784315 /* doggo.xcdatamodeld */,
@@ -156,8 +162,12 @@
 		E6F289B4230BCF8300784315 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				E6F2899F230B878600784315 /* Main.storyboard */,
-				E6F289A7230B878700784315 /* LaunchScreen.storyboard */,
+				9211A1F7230EFBAF00614EED /* Main.storyboard */,
+				9211A1FD230EFCB600614EED /* Train.storyboard */,
+				9211A1FB230EFCA800614EED /* Health.storyboard */,
+				9211A1F9230EFC9700614EED /* Dashboard.storyboard */,
+				9211A1F3230EFB8B00614EED /* LaunchScreen.storyboard */,
+				9211A1EF230EFB6500614EED /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -228,9 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */,
+				9211A1F8230EFBAF00614EED /* Main.storyboard in Resources */,
+				9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
-				E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */,
+				9211A1FA230EFC9700614EED /* Dashboard.storyboard in Resources */,
+				9211A1FC230EFCA800614EED /* Health.storyboard in Resources */,
+				9211A1FE230EFCB600614EED /* Train.storyboard in Resources */,
+				9211A1F5230EFB8B00614EED /* LaunchScreen.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +258,6 @@
 			files = (
 				E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */,
 				C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */,
-				E6F2899E230B878600784315 /* ViewController.swift in Sources */,
 				E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */,
 				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
 				E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */,
@@ -269,25 +282,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E6F2899F230B878600784315 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6F289A0230B878600784315 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E6F289A7230B878700784315 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6F289A8230B878700784315 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E6F289AB230B878700784315 /* Debug */ = {
