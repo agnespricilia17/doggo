@@ -32,6 +32,10 @@
 		E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D5230BDCD600784315 /* CoreDataHelper.swift */; };
 		E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D7230BDCEA00784315 /* VideoHelper.swift */; };
 		E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D9230BDD1C00784315 /* NotificationHelper.swift */; };
+		E6F289DF230E42AD00784315 /* RootTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289DD230E42AD00784315 /* RootTabBar.storyboard */; };
+		E6F289E2230E42E200784315 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289E0230E42E200784315 /* Home.storyboard */; };
+		E6F289E4230E434C00784315 /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289E3230E434C00784315 /* Health.storyboard */; };
+		E6F289E7230E437600784315 /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289E5230E437600784315 /* Train.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		E6F289D7230BDCEA00784315 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		E6F289D9230BDD1C00784315 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 		E6F289DC230CF5B300784315 /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jaapokki-Regular.otf"; path = "../../../../Downloads/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf"; sourceTree = "<group>"; };
+		E6F289DE230E42AD00784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/Base.lproj/RootTabBar.storyboard; sourceTree = "<group>"; };
+		E6F289E1230E42E200784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/doggo/Storyboard/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		E6F289E3230E434C00784315 /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
+		E6F289E6230E437600784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/doggo/Storyboard/Base.lproj/Train.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				E6F2899F230B878600784315 /* Main.storyboard */,
+				E6F289DD230E42AD00784315 /* RootTabBar.storyboard */,
+				E6F289E0230E42E200784315 /* Home.storyboard */,
+				E6F289E3230E434C00784315 /* Health.storyboard */,
+				E6F289E5230E437600784315 /* Train.storyboard */,
 				E6F289A7230B878700784315 /* LaunchScreen.storyboard */,
 				E6F289C9230BD86800784315 /* OnBoarding.storyboard */,
 			);
@@ -224,8 +236,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F289DF230E42AD00784315 /* RootTabBar.storyboard in Resources */,
 				E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
+				E6F289E2230E42E200784315 /* Home.storyboard in Resources */,
+				E6F289E4230E434C00784315 /* Health.storyboard in Resources */,
+				E6F289E7230E437600784315 /* Train.storyboard in Resources */,
 				E6F289A1230B878600784315 /* Main.storyboard in Resources */,
 				E6F289CA230BD86800784315 /* OnBoarding.storyboard in Resources */,
 			);
@@ -279,6 +295,30 @@
 				E6F289A8230B878700784315 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289DD230E42AD00784315 /* RootTabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F289DE230E42AD00784315 /* Base */,
+			);
+			name = RootTabBar.storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289E0230E42E200784315 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F289E1230E42E200784315 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289E5230E437600784315 /* Train.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F289E6230E437600784315 /* Base */,
+			);
+			name = Train.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
