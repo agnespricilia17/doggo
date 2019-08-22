@@ -70,6 +70,10 @@
 		E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D5230BDCD600784315 /* CoreDataHelper.swift */; };
 		E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D7230BDCEA00784315 /* VideoHelper.swift */; };
 		E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D9230BDD1C00784315 /* NotificationHelper.swift */; };
+		E6F289DF230E42AD00784315 /* RootTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289DD230E42AD00784315 /* RootTabBar.storyboard */; };
+		E6F289E2230E42E200784315 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289E0230E42E200784315 /* Home.storyboard */; };
+		E6F289E4230E434C00784315 /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289E3230E434C00784315 /* Health.storyboard */; };
+		E6F289E7230E437600784315 /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F289E5230E437600784315 /* Train.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +143,10 @@
 		E6F289D7230BDCEA00784315 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		E6F289D9230BDD1C00784315 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 		E6F289DC230CF5B300784315 /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jaapokki-Regular.otf"; path = "../../../../Downloads/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf"; sourceTree = "<group>"; };
+		E6F289DE230E42AD00784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/Base.lproj/RootTabBar.storyboard; sourceTree = "<group>"; };
+		E6F289E1230E42E200784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/doggo/Storyboard/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		E6F289E3230E434C00784315 /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
+		E6F289E6230E437600784315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/doggo/Storyboard/Base.lproj/Train.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +283,10 @@
 			isa = PBXGroup;
 			children = (
 				E6F2899F230B878600784315 /* Main.storyboard */,
+				E6F289DD230E42AD00784315 /* RootTabBar.storyboard */,
+				E6F289E0230E42E200784315 /* Home.storyboard */,
+				E6F289E3230E434C00784315 /* Health.storyboard */,
+				E6F289E5230E437600784315 /* Train.storyboard */,
 				E6F289A7230B878700784315 /* LaunchScreen.storyboard */,
 				E6F289C9230BD86800784315 /* OnBoarding.storyboard */,
 			);
@@ -347,6 +359,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F289DF230E42AD00784315 /* RootTabBar.storyboard in Resources */,
+				E6F289A9230B878700784315 /* LaunchScreen.storyboard in Resources */,
+				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
+				E6F289E2230E42E200784315 /* Home.storyboard in Resources */,
+				E6F289E4230E434C00784315 /* Health.storyboard in Resources */,
+				E6F289E7230E437600784315 /* Train.storyboard in Resources */,
 				C524F004230CFEDC00EAE665 /* SF-Pro-Display-Black.otf in Resources */,
 				C524F002230CFEDC00EAE665 /* SF-Pro-Display-LightItalic.otf in Resources */,
 				C524EFED230CFEDC00EAE665 /* logo Icon@3x.png in Resources */,
@@ -366,27 +384,6 @@
 				C524F00A230CFEDC00EAE665 /* SF-Pro-Text-LightItalic.otf in Resources */,
 				C524EFF6230CFEDC00EAE665 /* logo-03.png in Resources */,
 				C524EFF5230CFEDC00EAE665 /* SF-Pro-Display-Bold.otf in Resources */,
-				E6F289A1230B878600784315 /* Main.storyboard in Resources */,
-				C524F008230CFEDC00EAE665 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
-				C524EFEE230CFEDC00EAE665 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
-				C524EFFC230CFEDC00EAE665 /* SF-Pro-Text-Regular.otf in Resources */,
-				C524EFF9230CFEDC00EAE665 /* SF-Pro-Display-Heavy.otf in Resources */,
-				C524F00D230CFEDC00EAE665 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
-				C524EFFF230CFEDC00EAE665 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
-				C524EFF8230CFEDC00EAE665 /* logo muka@3x.png in Resources */,
-				C524EFC6230CFD9B00EAE665 /* SlideView.xib in Resources */,
-				C524EFF3230CFEDC00EAE665 /* SF-Pro-Text-MediumItalic.otf in Resources */,
-				C524EFEF230CFEDC00EAE665 /* SF-Pro-Text-Heavy.otf in Resources */,
-				C524EFF0230CFEDC00EAE665 /* SF-Pro-Display-RegularItalic.otf in Resources */,
-				C524EFEC230CFEDC00EAE665 /* Button - Add@3x.png in Resources */,
-				C524F003230CFEDC00EAE665 /* SF-Pro-Display-BlackItalic.otf in Resources */,
-				C524EFFE230CFEDC00EAE665 /* SF-Pro-Display-MediumItalic.otf in Resources */,
-				C524F00C230CFEDC00EAE665 /* SF-Pro-Display-BoldItalic.otf in Resources */,
-				C524EFF1230CFEDC00EAE665 /* SF-Pro-Display-Light.otf in Resources */,
-				C524EFFB230CFEDC00EAE665 /* SF-Pro-Display-Semibold.otf in Resources */,
-				C524F005230CFEDC00EAE665 /* SF-Pro-Text-BoldItalic.otf in Resources */,
-				C524F00B230CFEDC00EAE665 /* SF-Pro-Text-Medium.otf in Resources */,
-				E6F289CA230BD86800784315 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +437,30 @@
 				E6F289A8230B878700784315 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289DD230E42AD00784315 /* RootTabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F289DE230E42AD00784315 /* Base */,
+			);
+			name = RootTabBar.storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289E0230E42E200784315 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F289E1230E42E200784315 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		E6F289E5230E437600784315 /* Train.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F289E6230E437600784315 /* Base */,
+			);
+			name = Train.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
