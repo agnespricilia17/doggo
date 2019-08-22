@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
-		9211A1F5230EFB8B00614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1F3230EFB8B00614EED /* LaunchScreen.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
 		9211A204230F002700614EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A201230F002700614EED /* Main.storyboard */; };
 		9211A209230F010400614EED /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A208230F010400614EED /* Train.storyboard */; };
-		9211A20C230F014600614EED /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A20A230F014600614EED /* Dashboard.storyboard */; };
+		9211A212230F027900614EED /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A210230F027900614EED /* Dashboard.storyboard */; };
 		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
@@ -41,12 +40,11 @@
 
 /* Begin PBXFileReference section */
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		9211A1F3230EFB8B00614EED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9211A202230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9211A208230F010400614EED /* Train.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
-		9211A20B230F014600614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
+		9211A211230F027900614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
 		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
@@ -164,12 +162,11 @@
 		E6F289B4230BCF8300784315 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				9211A20A230F014600614EED /* Dashboard.storyboard */,
+				9211A210230F027900614EED /* Dashboard.storyboard */,
 				9211A1FF230F002700614EED /* LaunchScreen.storyboard */,
 				9211A208230F010400614EED /* Train.storyboard */,
 				9211A201230F002700614EED /* Main.storyboard */,
 				9211A1FB230EFCA800614EED /* Health.storyboard */,
-				9211A1F3230EFB8B00614EED /* LaunchScreen.storyboard */,
 				9211A1EF230EFB6500614EED /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
@@ -244,11 +241,10 @@
 				9211A204230F002700614EED /* Main.storyboard in Resources */,
 				9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
+				9211A212230F027900614EED /* Dashboard.storyboard in Resources */,
 				9211A1FC230EFCA800614EED /* Health.storyboard in Resources */,
 				9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */,
 				9211A209230F010400614EED /* Train.storyboard in Resources */,
-				9211A1F5230EFB8B00614EED /* LaunchScreen.storyboard in Resources */,
-				9211A20C230F014600614EED /* Dashboard.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,10 +300,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9211A20A230F014600614EED /* Dashboard.storyboard */ = {
+		9211A210230F027900614EED /* Dashboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9211A20B230F014600614EED /* Base */,
+				9211A211230F027900614EED /* Base */,
 			);
 			name = Dashboard.storyboard;
 			sourceTree = "<group>";
