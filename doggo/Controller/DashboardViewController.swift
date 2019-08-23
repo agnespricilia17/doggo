@@ -9,14 +9,32 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
-
+    
+    @IBOutlet weak var yellowCircle: UIView!
+    
+    @IBOutlet weak var dogListControl: UIPageControl!
+    
+    @IBOutlet weak var dogName: UILabel!
+    @IBOutlet weak var dogBreed: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        yellowCircle.layer.cornerRadius = yellowCircle.frame.width / 2
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
+    func setDogName() {
+        dogName.text = "Fluffy Bun"
+        dogBreed.text = "Golden Retriever"
+    }
+    
+    @IBAction func foodPageButton(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
