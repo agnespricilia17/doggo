@@ -17,6 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="nU0-Rf-bXg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXH-rL-6Ob" userLabel="Food Button">
+                                <rect key="frame" x="25" y="179" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="food button"/>
+                                <connections>
+                                    <segue destination="wE1-gu-sCi" kind="show" id="hrR-Fs-eB9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-dH-k2B" userLabel="Weight Button">
+                                <rect key="frame" x="212" y="179" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="weight button"/>
+                                <connections>
+                                    <segue destination="x5k-6J-yKh" kind="show" id="yfq-lJ-UBh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djM-zH-rK7" userLabel="Vet-check Button">
+                                <rect key="frame" x="212" y="365" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="vet check button"/>
+                                <connections>
+                                    <segue destination="8nM-3o-QGq" kind="show" id="qiY-yp-Or4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYD-e1-nM1" userLabel="Groom Button">
+                                <rect key="frame" x="25" y="365" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="groom button png"/>
+                                <connections>
+                                    <segue destination="zXe-G8-aIb" kind="show" id="6UD-Uz-gbd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c4Y-oX-HQ8"/>
                     </view>
@@ -24,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhC-Sj-3fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1917" y="2498"/>
+            <point key="canvasLocation" x="1915.9420289855075" y="2497.7678571428569"/>
         </scene>
         <!--Food Controller-->
         <scene sceneID="0D0-zP-Wm2">
@@ -87,4 +121,10 @@
             <point key="canvasLocation" x="3687" y="3483"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food button" width="528" height="528"/>
+        <image name="groom button png" width="528" height="528"/>
+        <image name="vet check button" width="528" height="528"/>
+        <image name="weight button" width="528" height="528"/>
+    </resources>
 </document>
