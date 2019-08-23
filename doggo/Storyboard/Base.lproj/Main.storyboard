@@ -203,7 +203,7 @@
                         <outlet property="nameField" destination="Z8S-Lr-gBm" id="YxR-qJ-wVM"/>
                         <outlet property="registerDone" destination="XtZ-SQ-NQe" id="3eD-2K-inW"/>
                         <outlet property="yellowCircle" destination="UmZ-Z6-rTw" id="S0D-Zz-RKU"/>
-                        <segue destination="HYM-dN-YIe" kind="showDetail" id="rRH-lN-CSD"/>
+                        <segue destination="HYM-dN-YIe" kind="showDetail" identifier="goToDashboard" id="rRH-lN-CSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Uu-Oj-wae" userLabel="First Responder" sceneMemberID="firstResponder"/>
