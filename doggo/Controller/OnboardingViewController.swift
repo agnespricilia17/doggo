@@ -74,6 +74,7 @@ class OnBoardingViewController: UIViewController,UIScrollViewDelegate{
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         
+        slides[2].btnStart.addTarget(self, action: #selector(gotoRegister), for: .touchDown)
         scrollView.delegate = self
         
         pageControl.numberOfPages = slides.count
@@ -82,6 +83,9 @@ class OnBoardingViewController: UIViewController,UIScrollViewDelegate{
   
     }
     
+    @objc func gotoRegister() {
+        performSegue(withIdentifier: "gotoRegister", sender: self)
+    }
 
    
 }

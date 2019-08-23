@@ -18,7 +18,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yTA-6x-1uj">
             <objects>
-                <navigationController id="TbB-wK-wEI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="registerDog" id="TbB-wK-wEI" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8HV-OT-2Ks">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
