@@ -14,6 +14,7 @@
 		9211A209230F010400614EED /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A208230F010400614EED /* Train.storyboard */; };
 		9211A214230F034C00614EED /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A213230F034C00614EED /* Dashboard.storyboard */; };
 		9211A216230F885700614EED /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C524EFC5230CFD9B00EAE665 /* SlideView.xib */; };
+		9211A218230FB19F00614EED /* NotificationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A217230FB19F00614EED /* NotificationData.swift */; };
 		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		9211A202230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9211A208230F010400614EED /* Train.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
 		9211A213230F034C00614EED /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		9211A217230FB19F00614EED /* NotificationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationData.swift; sourceTree = "<group>"; };
 		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
@@ -142,9 +144,9 @@
 				E6F289C3230BD52700784315 /* WeightViewController.swift */,
 				E6F289C5230BD53000784315 /* GroomViewController.swift */,
 				E6F289C7230BD54D00784315 /* CheckUpViewController.swift */,
-				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
 				C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */,
 				C524EFC3230CFD8E00EAE665 /* Slide.swift */,
+				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
 				C524EFC5230CFD9B00EAE665 /* SlideView.xib */,
 			);
 			path = Controller;
@@ -156,6 +158,7 @@
 				E6F289D5230BDCD600784315 /* CoreDataHelper.swift */,
 				E6F289D7230BDCEA00784315 /* VideoHelper.swift */,
 				E6F289D9230BDD1C00784315 /* NotificationHelper.swift */,
+				9211A217230FB19F00614EED /* NotificationData.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,
 				E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */,
 				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
+				9211A218230FB19F00614EED /* NotificationData.swift in Sources */,
 				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
 				C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */,
 			);

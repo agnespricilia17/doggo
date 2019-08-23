@@ -71,6 +71,10 @@ class OnBoardingViewController: UIViewController,UIScrollViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewDidLoad()
+        
+        var not = NotificationHelper()
+       // not.scheduleTimedNotification(data: NotificationData(title: "Test", content: "testing notification", duration: 1, isRepeating: false),isActionable: true)
+        not.scheduleDateNotification(data: NotificationData(title: "Test", content: "testing notification", duration: nil, isRepeating: nil), isDaily: true)
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         
