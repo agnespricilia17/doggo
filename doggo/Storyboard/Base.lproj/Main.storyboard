@@ -127,7 +127,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama             :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82I-er-GYJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name             :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82I-er-GYJ">
                                 <rect key="frame" x="41" y="599" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -173,15 +173,21 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2s-jq-Mww">
-                                <rect key="frame" x="172" y="635" width="33" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2s-jq-Mww">
+                                <rect key="frame" x="178" y="636" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Male"/>
+                                <state key="normal" title="Male" image="male gender"/>
+                                <connections>
+                                    <action selector="maleChoose:" destination="yuR-l5-UEm" eventType="touchUpInside" id="GyL-pm-QGK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFZ-tT-bzE">
-                                <rect key="frame" x="248" y="635" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFZ-tT-bzE">
+                                <rect key="frame" x="248" y="635" width="20" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Female"/>
+                                <state key="normal" title="Female" image="women gender"/>
+                                <connections>
+                                    <action selector="femaleChoose:" destination="yuR-l5-UEm" eventType="touchUpInside" id="Vwu-NS-trh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-SQ-NQe">
                                 <rect key="frame" x="109" y="816" width="194" height="46"/>
@@ -194,21 +200,46 @@
                                     <action selector="registerButton:" destination="yuR-l5-UEm" eventType="touchUpInside" id="Wpw-ke-8BV"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-Ko-s2Q">
+                                <rect key="frame" x="165" y="679" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgL-OF-aMD">
+                                <rect key="frame" x="165" y="720" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8N-ge-3RF">
+                                <rect key="frame" x="224" y="725" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hjW-Na-kac"/>
                     </view>
                     <connections>
                         <outlet property="breedLabel" destination="3VA-Pv-IWm" id="R3q-2b-NHJ"/>
+                        <outlet property="dobField" destination="Lhf-Ko-s2Q" id="fUM-gj-Ta7"/>
+                        <outlet property="femaleButton" destination="AFZ-tT-bzE" id="rqs-UR-D6R"/>
+                        <outlet property="maleButton" destination="V2s-jq-Mww" id="Dek-GV-TPG"/>
                         <outlet property="nameField" destination="Z8S-Lr-gBm" id="YxR-qJ-wVM"/>
                         <outlet property="registerDone" destination="XtZ-SQ-NQe" id="3eD-2K-inW"/>
+                        <outlet property="weightField" destination="bgL-OF-aMD" id="YAr-4g-lvR"/>
                         <outlet property="yellowCircle" destination="UmZ-Z6-rTw" id="S0D-Zz-RKU"/>
                         <segue destination="HYM-dN-YIe" kind="showDetail" identifier="goToDashboard" id="rRH-lN-CSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Uu-Oj-wae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="2003"/>
+            <point key="canvasLocation" x="134.78260869565219" y="2002.9017857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Pln-vK-gOM">
@@ -277,5 +308,7 @@
     </scenes>
     <resources>
         <image name="labrador_retriever_PNG81" width="204" height="361"/>
+        <image name="male gender" width="298" height="298"/>
+        <image name="women gender" width="222" height="330"/>
     </resources>
 </document>
