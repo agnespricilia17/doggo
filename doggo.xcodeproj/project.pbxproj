@@ -14,6 +14,14 @@
 		9211A209230F010400614EED /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A208230F010400614EED /* Train.storyboard */; };
 		9211A214230F034C00614EED /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A213230F034C00614EED /* Dashboard.storyboard */; };
 		9211A216230F885700614EED /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C524EFC5230CFD9B00EAE665 /* SlideView.xib */; };
+		9211A275231389B700614EED /* DogChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A274231389B700614EED /* DogChartData.swift */; };
+		9211A277231389D500614EED /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A276231389D500614EED /* CustomSegments.swift */; };
+		9211A279231389E500614EED /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A278231389E500614EED /* UIBezierPathExtension.swift */; };
+		9211A27B231389F400614EED /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A27A231389F400614EED /* CALayerExtension.swift */; };
+		9211A27D23138A0300614EED /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A27C23138A0300614EED /* ArrayExtension.swift */; };
+		9211A27F23138A0F00614EED /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A27E23138A0F00614EED /* ChartView.swift */; };
+		9211A28123138A2900614EED /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A28023138A2900614EED /* ChartPresenter.swift */; };
+		9211A28323138A3B00614EED /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A28223138A3B00614EED /* ChartData.swift */; };
 		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
@@ -46,6 +54,14 @@
 		9211A202230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9211A208230F010400614EED /* Train.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
 		9211A213230F034C00614EED /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		9211A274231389B700614EED /* DogChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogChartData.swift; sourceTree = "<group>"; };
+		9211A276231389D500614EED /* CustomSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
+		9211A278231389E500614EED /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		9211A27A231389F400614EED /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		9211A27C23138A0300614EED /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		9211A27E23138A0F00614EED /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		9211A28023138A2900614EED /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
+		9211A28223138A3B00614EED /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
@@ -156,6 +172,14 @@
 				E6F289D5230BDCD600784315 /* CoreDataHelper.swift */,
 				E6F289D7230BDCEA00784315 /* VideoHelper.swift */,
 				E6F289D9230BDD1C00784315 /* NotificationHelper.swift */,
+				9211A274231389B700614EED /* DogChartData.swift */,
+				9211A276231389D500614EED /* CustomSegments.swift */,
+				9211A278231389E500614EED /* UIBezierPathExtension.swift */,
+				9211A27A231389F400614EED /* CALayerExtension.swift */,
+				9211A27C23138A0300614EED /* ArrayExtension.swift */,
+				9211A27E23138A0F00614EED /* ChartView.swift */,
+				9211A28023138A2900614EED /* ChartPresenter.swift */,
+				9211A28223138A3B00614EED /* ChartData.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -260,10 +284,13 @@
 			files = (
 				E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */,
 				C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */,
+				9211A279231389E500614EED /* UIBezierPathExtension.swift in Sources */,
+				9211A27F23138A0F00614EED /* ChartView.swift in Sources */,
 				E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */,
 				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
 				E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */,
 				E6F289BC230BD41000784315 /* RegisterViewController.swift in Sources */,
+				9211A27B231389F400614EED /* CALayerExtension.swift in Sources */,
 				E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */,
 				E6F2899C230B878600784315 /* AppDelegate.swift in Sources */,
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
@@ -271,10 +298,15 @@
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,
 				E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */,
 				E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */,
+				9211A28323138A3B00614EED /* ChartData.swift in Sources */,
 				E6F289C4230BD52700784315 /* WeightViewController.swift in Sources */,
 				E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */,
 				E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */,
+				9211A277231389D500614EED /* CustomSegments.swift in Sources */,
+				9211A275231389B700614EED /* DogChartData.swift in Sources */,
+				9211A28123138A2900614EED /* ChartPresenter.swift in Sources */,
 				E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */,
+				9211A27D23138A0300614EED /* ArrayExtension.swift in Sources */,
 				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,
 				E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */,
 				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
