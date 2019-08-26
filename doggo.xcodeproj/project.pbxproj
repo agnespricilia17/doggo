@@ -158,9 +158,9 @@
 				E6F289C3230BD52700784315 /* WeightViewController.swift */,
 				E6F289C5230BD53000784315 /* GroomViewController.swift */,
 				E6F289C7230BD54D00784315 /* CheckUpViewController.swift */,
-				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
 				C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */,
 				C524EFC3230CFD8E00EAE665 /* Slide.swift */,
+				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
 				C524EFC5230CFD9B00EAE665 /* SlideView.xib */,
 			);
 			path = Controller;
@@ -310,6 +310,7 @@
 				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,
 				E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */,
 				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
+				9211A218230FB19F00614EED /* NotificationData.swift in Sources */,
 				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
 				C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */,
 			);
