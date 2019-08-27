@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				E6F289B5230BD3DE00784315 /* DashboardViewController.swift */,
 				E6F289B7230BD3ED00784315 /* HealthViewController.swift */,
 				E6F289B9230BD3FB00784315 /* TrainViewController.swift */,
+				8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */,
 				E6F289BB230BD41000784315 /* RegisterViewController.swift */,
 				E6F289BD230BD4D000784315 /* ChooseBreedViewController.swift */,
 				E6F289C1230BD52100784315 /* FoodViewController.swift */,
@@ -296,6 +299,7 @@
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
 				E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */,
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,
+				8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */,
 				E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */,
 				E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */,
 				9211A28323138A3B00614EED /* ChartData.swift in Sources */,
