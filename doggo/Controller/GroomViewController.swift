@@ -12,7 +12,7 @@ class GroomViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Groom"
         // Do any additional setup after loading the view.
     }
     
