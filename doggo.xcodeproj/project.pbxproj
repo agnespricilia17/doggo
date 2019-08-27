@@ -16,6 +16,8 @@
 		9211A216230F885700614EED /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C524EFC5230CFD9B00EAE665 /* SlideView.xib */; };
 		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
+		E69E84EB2313CABC008D3037 /* breedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E84EA2313CABC008D3037 /* breedSlide.swift */; };
+		E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69E84EC2313CAED008D3037 /* breedSlideView.xib */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
 		E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6F289A2230B878600784315 /* doggo.xcdatamodeld */; };
 		E6F289A6230B878700784315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F289A5230B878700784315 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
+		E69E84EA2313CABC008D3037 /* breedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breedSlide.swift; sourceTree = "<group>"; };
+		E69E84EC2313CAED008D3037 /* breedSlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = breedSlideView.xib; sourceTree = "<group>"; };
 		E6F28998230B878600784315 /* doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2899B230B878600784315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6F289A3230B878600784315 /* doggo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doggo.xcdatamodel; sourceTree = "<group>"; };
@@ -144,8 +148,10 @@
 				E6F289C7230BD54D00784315 /* CheckUpViewController.swift */,
 				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
 				C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */,
+				E69E84EA2313CABC008D3037 /* breedSlide.swift */,
 				C524EFC3230CFD8E00EAE665 /* Slide.swift */,
 				C524EFC5230CFD9B00EAE665 /* SlideView.xib */,
+				E69E84EC2313CAED008D3037 /* breedSlideView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
+				E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */,
 				9211A1FC230EFCA800614EED /* Health.storyboard in Resources */,
 				9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */,
 				9211A216230F885700614EED /* SlideView.xib in Resources */,
@@ -273,6 +280,7 @@
 				E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */,
 				E6F289C4230BD52700784315 /* WeightViewController.swift in Sources */,
 				E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */,
+				E69E84EB2313CABC008D3037 /* breedSlide.swift in Sources */,
 				E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */,
 				E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */,
 				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,

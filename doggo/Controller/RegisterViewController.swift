@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController{
+class RegisterViewController: UIViewController {
 
     @IBOutlet weak var yellowCircle: UIView!
     
@@ -49,16 +49,43 @@ class RegisterViewController: UIViewController{
     
     
     @IBAction func registerButton(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Confirmation", message: "Do you want to save this data? Please make sure the data is correct.", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "Register"
-            , style: .default
-            , handler: { (UIAlertAction) in
-                self.confirmRegistration()
-        }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-        self.present(alert, animated: true)
+        if nameField.text == "" {
+            let nameAlert = UIAlertController(title: "Name required.", message: "You need to fill your dog's name.", preferredStyle: .alert)
+            nameAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            self.present(nameAlert, animated: true)
+        }
+        else if isMale == nil {
+            let genderAlert = UIAlertController(title: "Gender required.", message: "You need to choose your dog's gender.", preferredStyle: .alert)
+            genderAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            self.present(genderAlert, animated: true)
+        }
+        else if dobField.text == "" {
+            let dobAlert = UIAlertController(title: "Date of Birth required.", message: "You need to fill your dog's birth date.", preferredStyle: .alert)
+            dobAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            self.present(dobAlert, animated: true)
+        }
+        else if weightField.text == "" {
+            let weightAlert = UIAlertController(title: "Weight required.", message: "You need to fill your dog's weight.", preferredStyle: .alert)
+            weightAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            
+            self.present(weightAlert, animated: true)
+        }
+        else {
+            let alert = UIAlertController(title: "Confirmation", message: "Do you want to save this data? Please make sure the data is correct.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Register"
+                , style: .default
+                , handler: { (UIAlertAction) in
+                    self.confirmRegistration()
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
+       
     }
     
    
@@ -85,14 +112,13 @@ class RegisterViewController: UIViewController{
         dobField.inputView = datePicker
         
         //input weight
-//      weightField.delegate = self
+     // weightField.delegate = self
         weightField.keyboardType = UIKeyboardType.numberPad
+//        createWeightPicker()
         
        
         
     }
-    
-   
     
     func confirmRegistration() {
         performSegue(withIdentifier: "goToDashboard", sender: self)
@@ -104,13 +130,42 @@ class RegisterViewController: UIViewController{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         dobField.text = dateFormatter.string(from: datePicker.date)
-        view.endEditing(true)
+       // view.endEditing(true)
     }
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return 1
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return weightKg.count
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        return weightKg[row]
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        selectedWeight = weightKg[row]
+//        weightField.text = selectedWeight
+//    }
+//
+//    func createWeightPicker() {
+//        let weightPicker = UIPickerView()
+//        weightPicker.delegate = self
+//
+//        weightField.inputView = weightPicker
+//    }
+//
+//
+//
+//    var selectedWeight : String?
+//
+//    var weightKg = ["23", "24", "25", "26"]
     
     /*
     // MARK: - Navigation
