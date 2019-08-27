@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
+
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
@@ -76,10 +76,12 @@
 		E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D5230BDCD600784315 /* CoreDataHelper.swift */; };
 		E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D7230BDCEA00784315 /* VideoHelper.swift */; };
 		E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D9230BDD1C00784315 /* NotificationHelper.swift */; };
+    8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
+    1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACEC042314E4C900D88164 /* PhotoSlide.swift */; };
+		1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACEC062314E4FC00D88164 /* PhotoSlide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,6 +153,10 @@
 		E6F289D7230BDCEA00784315 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		E6F289D9230BDD1C00784315 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 		E6F289DC230CF5B300784315 /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jaapokki-Regular.otf"; path = "../../../../Downloads/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf"; sourceTree = "<group>"; };
+		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
+    1EACEC042314E4C900D88164 /* PhotoSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSlide.swift; sourceTree = "<group>"; };
+		1EACEC062314E4FC00D88164 /* PhotoSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSlide.xib; sourceTree = "<group>"; };
+    
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +255,8 @@
 		E6F289B2230BCF6100784315 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1EACEC042314E4C900D88164 /* PhotoSlide.swift */,
+				1EACEC062314E4FC00D88164 /* PhotoSlide.xib */,
 				E6F289B5230BD3DE00784315 /* DashboardViewController.swift */,
 				E6F289B7230BD3ED00784315 /* HealthViewController.swift */,
 				E6F289B9230BD3FB00784315 /* TrainViewController.swift */,
@@ -397,13 +405,15 @@
 				C53BC856230FA65B0073F8E7 /* SF-Pro-Text-BoldItalic.otf in Resources */,
 				C53BC852230FA65B0073F8E7 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
 				9211A209230F010400614EED /* Train.storyboard in Resources */,
-				C53BC848230FA65B0073F8E7 /* SF-Pro-Display-Bold.otf in Resources */,
+
+				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
+        1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */,
+				C53BC851230FA65B0073F8E7 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				C53BC859230FA65B0073F8E7 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+        C53BC848230FA65B0073F8E7 /* SF-Pro-Display-Bold.otf in Resources */,
 				C53BC846230FA65B0073F8E7 /* SF-Pro-Display-Regular.otf in Resources */,
 				C53BC854230FA65B0073F8E7 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				C53BC858230FA65B0073F8E7 /* SF-Pro-Text-Semibold.otf in Resources */,
-				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
-				C53BC851230FA65B0073F8E7 /* SF-Pro-Display-Ultralight.otf in Resources */,
-				C53BC859230FA65B0073F8E7 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +438,7 @@
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
 				E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */,
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,
-				8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */,
+
 				E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */,
 				E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */,
 				9211A28323138A3B00614EED /* ChartData.swift in Sources */,
@@ -446,6 +456,8 @@
 				9211A218230FB19F00614EED /* NotificationData.swift in Sources */,
 				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
 				C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */,
+        1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */,
+        8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
