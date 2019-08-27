@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XFb-iP-3jb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="faM-uj-JuP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,16 +15,146 @@
             <objects>
                 <viewController id="XFb-iP-3jb" userLabel="Train Controller" customClass="TrainViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwf-mW-XP0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c8-Fk-C0X">
+                                <rect key="frame" x="28" y="175" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="potty"/>
+                                <connections>
+                                    <action selector="pottyButtonTapped:" destination="XFb-iP-3jb" eventType="touchUpInside" id="LMH-XG-dpv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPU-8d-PQy">
+                                <rect key="frame" x="215" y="175" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand shake"/>
+                                <connections>
+                                    <action selector="handShakeButtonTapped:" destination="XFb-iP-3jb" eventType="touchUpInside" id="gA1-7Z-dip"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-Og-o1t">
+                                <rect key="frame" x="28" y="362" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sit"/>
+                                <connections>
+                                    <action selector="sitButtonTapped:" destination="XFb-iP-3jb" eventType="touchUpInside" id="jXC-Hr-J16"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dg-cD-PWT">
+                                <rect key="frame" x="215" y="362" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="halt"/>
+                                <connections>
+                                    <action selector="haltButtonTapped:" destination="XFb-iP-3jb" eventType="touchUpInside" id="F9P-YQ-8f9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNQ-0F-Dn0">
+                                <rect key="frame" x="28" y="550" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="stand"/>
+                                <connections>
+                                    <action selector="standButtonTapped:" destination="XFb-iP-3jb" eventType="touchUpInside" id="YPI-p6-Y1O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-wM-Jbd">
+                                <rect key="frame" x="215" y="550" width="171" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="call"/>
+                                <connections>
+                                    <action selector="callButtonTapped:" destination="XFb-iP-3jb" eventType="touchUpInside" id="DoW-jY-IRk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JhX-Ze-JG5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7ij-ng-ZbE"/>
+                    <navigationItem key="navigationItem" title="Train" id="P0R-gZ-ioj"/>
+                    <connections>
+                        <outlet property="callButton" destination="N9d-wM-Jbd" id="LKY-qp-FQG"/>
+                        <outlet property="haltButton" destination="4dg-cD-PWT" id="gRc-yJ-t0O"/>
+                        <outlet property="handShakeButton" destination="uPU-8d-PQy" id="2YF-5S-z9m"/>
+                        <outlet property="pottyButton" destination="1c8-Fk-C0X" id="Cd1-Jf-9Ui"/>
+                        <outlet property="sitButton" destination="IAO-Og-o1t" id="ywj-KI-mCe"/>
+                        <outlet property="standButton" destination="kNQ-0F-Dn0" id="0zY-Ye-bbh"/>
+                        <segue destination="sW1-T7-xtr" kind="show" identifier="trainDetailSegue" id="UG3-dK-cm6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dv-QJ-IcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="2458"/>
+            <point key="canvasLocation" x="3195.6521739130435" y="2457.5892857142858"/>
+        </scene>
+        <!--Train Detail View Controller-->
+        <scene sceneID="vzC-qd-FSu">
+            <objects>
+                <viewController id="sW1-T7-xtr" customClass="TrainDetailViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wpk-Vb-vmP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKu-E0-240">
+                                <rect key="frame" x="20" y="420" width="122" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6N-i4-J1j">
+                                <rect key="frame" x="20" y="170" width="374" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMx-Nh-Jef">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBA-nL-gPr">
+                                        <rect key="frame" x="142" y="65" width="90" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96620899439999997" green="0.84858998569999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="roD-YM-6PK"/>
+                    </view>
+                    <connections>
+                        <outlet property="playImageView" destination="pBA-nL-gPr" id="sPh-g1-sja"/>
+                        <outlet property="thumbnailImageView" destination="dMx-Nh-Jef" id="7Eh-Bu-wyy"/>
+                        <outlet property="videoPlayerView" destination="c6N-i4-J1j" id="KdA-mN-rf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ED2-Tb-ec5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3934.7826086956525" y="2457.5892857142858"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gzA-pQ-4bW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="faM-uj-JuP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7ij-ng-ZbE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GBp-9T-mGc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XFb-iP-3jb" kind="relationship" relationship="rootViewController" id="ibn-5p-CRq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dp0-2f-uzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2285.507246376812" y="2457.5892857142858"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="call" width="171" height="171"/>
+        <image name="halt" width="171" height="171"/>
+        <image name="hand shake" width="171" height="171"/>
+        <image name="potty" width="171" height="171"/>
+        <image name="sit" width="171" height="171"/>
+        <image name="stand" width="171" height="171"/>
+    </resources>
 </document>
