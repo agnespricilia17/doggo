@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACEC042314E4C900D88164 /* PhotoSlide.swift */; };
+		1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACEC062314E4FC00D88164 /* PhotoSlide.xib */; };
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EACEC042314E4C900D88164 /* PhotoSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSlide.swift; sourceTree = "<group>"; };
+		1EACEC062314E4FC00D88164 /* PhotoSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSlide.xib; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		E6F289B2230BCF6100784315 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1EACEC042314E4C900D88164 /* PhotoSlide.swift */,
+				1EACEC062314E4FC00D88164 /* PhotoSlide.xib */,
 				E6F289B5230BD3DE00784315 /* DashboardViewController.swift */,
 				E6F289B7230BD3ED00784315 /* HealthViewController.swift */,
 				E6F289B9230BD3FB00784315 /* TrainViewController.swift */,
@@ -247,6 +253,7 @@
 				9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */,
 				9211A216230F885700614EED /* SlideView.xib in Resources */,
 				9211A209230F010400614EED /* Train.storyboard in Resources */,
+				1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */,
 				E6F289A6230B878700784315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
 				E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */,
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,
+				1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */,
 				E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */,
 				E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */,
 				E6F289C4230BD52700784315 /* WeightViewController.swift in Sources */,
