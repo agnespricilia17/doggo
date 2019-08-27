@@ -131,7 +131,7 @@
                                 <rect key="frame" x="57" y="165" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labrador_retriever_PNG81" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-yo-a0G">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-yo-a0G">
                                         <rect key="frame" x="30" y="-18" width="240" height="336"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -273,7 +273,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="labrador_retriever_PNG81" width="204" height="361"/>
         <image name="male gender" width="298" height="298"/>
         <image name="women gender" width="222" height="330"/>
     </resources>
