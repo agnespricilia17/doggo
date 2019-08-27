@@ -24,13 +24,15 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var weightField: UITextField!
     var activeTextField : UITextField!
     
+    @IBOutlet weak var breedImage: UIImageView!
     @IBOutlet weak var maleButton: UIButton!
     @IBOutlet weak var femaleButton: UIButton!
+    
     var isMale : Bool?
     
     
-    var breedName : String = ""
-    var breedImage:String = ""
+    var transferedBreedName:String?
+    var transferedBreedImage:UIImage?
     
     @IBAction func maleChoose(_ sender: Any) {
         isMale = true
@@ -96,6 +98,8 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        breedImage.image = transferedBreedImage
+        breedLabel.text = transferedBreedName
         yellowCircle.layer.cornerRadius = yellowCircle.frame.width/2
         // Do any additional setup after loading the view.
         
