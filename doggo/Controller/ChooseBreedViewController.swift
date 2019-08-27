@@ -211,7 +211,8 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         dogName = slides[0].breedName.text ?? "AA"
-
+        dogPic = slides[0].breedView.image ?? nil
+        
         view.bringSubviewToFront(askBreedLabel)
         view.bringSubviewToFront(nextButton)
 
