@@ -31,6 +31,10 @@
 		E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69E84EC2313CAED008D3037 /* breedSlideView.xib */; };
 		E69E84EF231507CB008D3037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69E84EE231507CB008D3037 /* Assets.xcassets */; };
 		E69E84F723151648008D3037 /* NotificationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E84F623151648008D3037 /* NotificationData.swift */; };
+		E69E84F92315229F008D3037 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84F82315229F008D3037 /* Food.storyboard */; };
+		E69E84FB23152301008D3037 /* Weight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84FA23152301008D3037 /* Weight.storyboard */; };
+		E69E84FD23152315008D3037 /* Groom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84FC23152315008D3037 /* Groom.storyboard */; };
+		E69E84FF23152333008D3037 /* VetCheck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84FE23152333008D3037 /* VetCheck.storyboard */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
 		E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6F289A2230B878600784315 /* doggo.xcdatamodeld */; };
 		E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B5230BD3DE00784315 /* DashboardViewController.swift */; };
@@ -78,6 +82,10 @@
 		E69E84EC2313CAED008D3037 /* breedSlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = breedSlideView.xib; sourceTree = "<group>"; };
 		E69E84EE231507CB008D3037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E69E84F623151648008D3037 /* NotificationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationData.swift; sourceTree = "<group>"; };
+		E69E84F82315229F008D3037 /* Food.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Food.storyboard; sourceTree = "<group>"; };
+		E69E84FA23152301008D3037 /* Weight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Weight.storyboard; sourceTree = "<group>"; };
+		E69E84FC23152315008D3037 /* Groom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Groom.storyboard; sourceTree = "<group>"; };
+		E69E84FE23152333008D3037 /* VetCheck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VetCheck.storyboard; sourceTree = "<group>"; };
 		E6F28998230B878600784315 /* doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2899B230B878600784315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6F289A3230B878600784315 /* doggo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doggo.xcdatamodel; sourceTree = "<group>"; };
@@ -208,6 +216,10 @@
 				9211A208230F010400614EED /* Train.storyboard */,
 				9211A201230F002700614EED /* Main.storyboard */,
 				9211A1FB230EFCA800614EED /* Health.storyboard */,
+				E69E84FE23152333008D3037 /* VetCheck.storyboard */,
+				E69E84FC23152315008D3037 /* Groom.storyboard */,
+				E69E84FA23152301008D3037 /* Weight.storyboard */,
+				E69E84F82315229F008D3037 /* Food.storyboard */,
 				9211A1EF230EFB6500614EED /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
@@ -272,15 +284,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9211A204230F002700614EED /* Main.storyboard in Resources */,
+				E69E84FD23152315008D3037 /* Groom.storyboard in Resources */,
 				9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */,
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
+				E69E84FF23152333008D3037 /* VetCheck.storyboard in Resources */,
 				E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */,
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
 				9211A1FC230EFCA800614EED /* Health.storyboard in Resources */,
+				E69E84F92315229F008D3037 /* Food.storyboard in Resources */,
 				9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */,
 				9211A216230F885700614EED /* SlideView.xib in Resources */,
 				9211A209230F010400614EED /* Train.storyboard in Resources */,
 				E69E84EF231507CB008D3037 /* Assets.xcassets in Resources */,
+				E69E84FB23152301008D3037 /* Weight.storyboard in Resources */,
 				1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
