@@ -82,6 +82,21 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    var offsetXSebelumnya:CGFloat = 0
+    var kiriAtauKanan:String = ""
+    var kiriAtauKananSebelumnya:String = ""
+    var namaAnjingSekarang: String = ""
+    var currentPos:Int = 0
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        offsetXSebelumnya = scrollView.contentOffset.x
+    }
+    
+    var prevX:CGFloat = 0
+    var currentX:CGFloat = 0
+    var isRight = false
+    var isRightTrack = false
+    var dogName = ""
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         //pageControl.currentPage = Int(pageIndex)
@@ -99,6 +114,90 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         if scrollView.contentOffset.y > 0 || scrollView.contentOffset.y < 0 {
             scrollView.contentOffset.y = 0
         }
+        
+       // print("X SBELUMNYA :  \(offsetXSebelumnya)")
+       // print("X SEKARANG : \(scrollView.contentOffset.x)")
+        
+//        if currentPos != 0 && currentPos != slides.count-1{
+//            if scrollView.contentOffset.x < offsetXSebelumnya{
+//                print("kiri")
+//                if kiriAtauKanan == "kiri" && kiriAtauKananSebelumnya != kiriAtauKanan{
+//                    currentPos -= 1
+//                    if currentPos < 0{
+//                        currentPos = 0
+//                    }
+//                    namaAnjingSekarang = slides[currentPos].breedName.text ?? "gagal"
+//                    kiriAtauKananSebelumnya = kiriAtauKanan
+//                }else{
+//                    kiriAtauKanan = "kiri"
+//                }
+//            }
+//            if scrollView.contentOffset.x > offsetXSebelumnya{
+//                print("kanan")
+//                if kiriAtauKanan == "kanan" && kiriAtauKananSebelumnya != kiriAtauKanan{
+//                    currentPos += 1
+//                    if currentPos > slides.count-1{
+//                        currentPos = slides.count-1
+//                    }
+//                    namaAnjingSekarang = slides[currentPos].breedName.text ?? "gagal"
+//                    kiriAtauKananSebelumnya = kiriAtauKanan
+//                }else{
+//                    kiriAtauKanan = "kanan"
+//                }
+//            }
+//            print(namaAnjingSekarang)
+//        }
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        prevX = currentX
+        
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        //kiriAtauKananSebelumnya = ""
+        currentX = scrollView.contentOffset.x
+        let jarakAntarSlide = 414
+        var perbedaan = Int(abs(currentX - prevX))
+        print(perbedaan)
+        print("Prev : \(prevX)")
+        print("Current : \(currentX)")
+        
+        let extra = perbedaan / jarakAntarSlide
+        print("extra :\(extra)")
+        if perbedaan >= jarakAntarSlide {
+            selectedBreed(extra: extra)
+        }
+        else if perbedaan <= jarakAntarSlide {
+            selectedBreed(extra: extra)
+        }
+    }
+    
+    func selectedBreed(extra: Int) {
+        if currentX > prevX {
+            isRight = true
+            
+            if currentPos > slides.count - 1 {
+                currentPos = slides.count - 1
+            }else {
+                currentPos += extra
+                print("kanan curpos : \(currentPos)")
+            }
+            
+            
+        }
+        else if currentX < prevX {
+            isRight = false
+            
+            if currentPos > slides.count - 1 {
+                currentPos = slides.count - 1
+            }
+            else {
+                currentPos -= extra
+                print("kiri curpos : \(currentPos)")
+            }
+        }
+        dogName = slides[currentPos].breedName.text ?? "AAAA"
+        print(dogName)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,13 +211,19 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         
         slides = createSlides()
         setupSlideScrollView(slides: slides)
+        dogName = slides[0].breedName.text ?? "AA"
 
         view.bringSubviewToFront(askBreedLabel)
         view.bringSubviewToFront(nextButton)
 
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "registerSegue"{
+            var vc = segue.destination as! RegisterViewController
+            vc.breedName = namaAnjingSekarang
+        }
+    }
     /*
     // MARK: - Navigation
 

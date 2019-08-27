@@ -55,7 +55,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yuR-l5-UEm" kind="show" id="WNi-nS-rjQ"/>
+                                    <segue destination="yuR-l5-UEm" kind="show" identifier="registerSegue" id="WNi-nS-rjQ"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QvO-5W-FKb">

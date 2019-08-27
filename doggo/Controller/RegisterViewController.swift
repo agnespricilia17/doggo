@@ -28,6 +28,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var femaleButton: UIButton!
     var isMale : Bool?
     
+    
+    var breedName : String = ""
+    var breedImage:String = ""
+    
     @IBAction func maleChoose(_ sender: Any) {
         isMale = true
         maleButton.frame = CGRect(x: 178, y: 636, width: 28, height: 28)
@@ -137,6 +141,7 @@ class RegisterViewController: UIViewController {
         view.endEditing(true)
     }
     
+   
 //    func numberOfComponents(in pickerView: UIPickerView) -> Int {
 //        return 1
 //    }
