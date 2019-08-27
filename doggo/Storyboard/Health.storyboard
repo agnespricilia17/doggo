@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HMd-Ah-pTi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="68r-dj-LeF">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,14 +17,48 @@
                     <view key="view" contentMode="scaleToFill" id="nU0-Rf-bXg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXH-rL-6Ob" userLabel="Food Button">
+                                <rect key="frame" x="25" y="179" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="food button"/>
+                                <connections>
+                                    <segue destination="wE1-gu-sCi" kind="show" id="hrR-Fs-eB9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-dH-k2B" userLabel="Weight Button">
+                                <rect key="frame" x="212" y="179" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="weight button"/>
+                                <connections>
+                                    <segue destination="x5k-6J-yKh" kind="show" id="yfq-lJ-UBh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djM-zH-rK7" userLabel="Vet-check Button">
+                                <rect key="frame" x="212" y="365" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="vet check button"/>
+                                <connections>
+                                    <segue destination="8nM-3o-QGq" kind="show" id="qiY-yp-Or4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYD-e1-nM1" userLabel="Groom Button">
+                                <rect key="frame" x="25" y="365" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="groom button png"/>
+                                <connections>
+                                    <segue destination="zXe-G8-aIb" kind="show" id="6UD-Uz-gbd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c4Y-oX-HQ8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Health" id="bLp-Mg-PZa"/>
+                    <navigationItem key="navigationItem" title="Health" id="f5p-R3-NNj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhC-Sj-3fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1917" y="2498"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="2497.7678571428569"/>
         </scene>
         <!--Food Controller-->
         <scene sceneID="0D0-zP-Wm2">
@@ -54,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FoN-ga-Mfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3687" y="2101"/>
+            <point key="canvasLocation" x="4597.1014492753629" y="2100.6696428571427"/>
         </scene>
         <!--Groom Controller-->
         <scene sceneID="jjJ-08-Qpb">
@@ -69,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbV-2A-c07" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3687" y="2790"/>
+            <point key="canvasLocation" x="4597.1014492753629" y="2789.7321428571427"/>
         </scene>
         <!--Check Up Controller-->
         <scene sceneID="HVk-Oq-3kH">
@@ -86,5 +120,30 @@
             </objects>
             <point key="canvasLocation" x="3687" y="3483"/>
         </scene>
+        <!--Health-->
+        <scene sceneID="l56-OI-0qX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="68r-dj-LeF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Health" id="bLp-Mg-PZa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="nG1-Hu-as6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HMd-Ah-pTi" kind="relationship" relationship="rootViewController" id="7qU-kw-C0P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VpO-m1-hCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915.9420289855075" y="2497.7678571428569"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="food button" width="528" height="528"/>
+        <image name="groom button png" width="528" height="528"/>
+        <image name="vet check button" width="528" height="528"/>
+        <image name="weight button" width="528" height="528"/>
+    </resources>
 </document>

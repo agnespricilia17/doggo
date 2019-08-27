@@ -12,7 +12,7 @@ class CheckUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Vet-check"
         // Do any additional setup after loading the view.
     }
     
