@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E7865FF230F9C2200CFDF6C /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7865FE230F9C2200CFDF6C /* BubbleView.swift */; };
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E7865FE230F9C2200CFDF6C /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,14 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E7865FD230F9BF000CFDF6C /*  Custom */ = {
-			isa = PBXGroup;
-			children = (
-				1E7865FE230F9C2200CFDF6C /* BubbleView.swift */,
-			);
-			path = " Custom";
-			sourceTree = "<group>";
-		};
 		E6F2898F230B878600784315 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +105,6 @@
 		E6F2899A230B878600784315 /* doggo */ = {
 			isa = PBXGroup;
 			children = (
-				1E7865FD230F9BF000CFDF6C /*  Custom */,
 				E6F289DB230CF58C00784315 /* Font */,
 				E6F289B4230BCF8300784315 /* Storyboard */,
 				E6F289B3230BCF7600784315 /* Helper */,
@@ -270,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */,
-				1E7865FF230F9C2200CFDF6C /* BubbleView.swift in Sources */,
 				C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */,
 				E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */,
 				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
