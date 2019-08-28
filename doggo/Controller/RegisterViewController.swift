@@ -94,8 +94,6 @@ class RegisterViewController: UIViewController {
        
     }
     
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         breedImage.image = transferedBreedImage
@@ -124,8 +122,9 @@ class RegisterViewController: UIViewController {
         weightField.keyboardType = UIKeyboardType.numberPad
 //        createWeightPicker()
         
-       
-        
+        //keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object:nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object:nil)
     }
     
     func confirmRegistration() {
@@ -136,7 +135,7 @@ class RegisterViewController: UIViewController {
  
     @objc func dateChanged(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.dateFormat = "dd/MM/yyyy"
         dobField.text = dateFormatter.string(from: datePicker.date)
        // view.endEditing(true)
     }
@@ -145,7 +144,24 @@ class RegisterViewController: UIViewController {
         view.endEditing(true)
     }
     
-   
+    @objc func keyboardWillShow(notification: NSNotification) {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= 210.5
+            }
+    }
+    
+    func showKeyboard(offset: CGFloat) {
+        var reducedValue:CGFloat = 300 - offset
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= reducedValue
+            }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
 //    func numberOfComponents(in pickerView: UIPickerView) -> Int {
 //        return 1
 //    }
