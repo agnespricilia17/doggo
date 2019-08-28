@@ -204,7 +204,7 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         nextButton.layer.cornerRadius = nextButton.frame.size.height/2
         nextButton.clipsToBounds = true
         nextButton.layer.borderWidth = 1
-        nextButton.layer.borderColor = UIColor.blue.cgColor
+        nextButton.layer.borderColor = #colorLiteral(red: 0, green: 0.4745098039, blue: 1, alpha: 1)
         
         self.breedScrollView.delegate = self
         

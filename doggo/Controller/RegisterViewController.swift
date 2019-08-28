@@ -67,14 +67,30 @@ class RegisterViewController: UIViewController {
             
             self.present(genderAlert, animated: true)
         }
-        else if dobField.text == "" {
+        else if dobField.text == "" || !isYearValid(chosenDate: datePicker!.date){
             let dobAlert = UIAlertController(title: "Date of Birth required.", message: "You need to fill your dog's birth date.", preferredStyle: .alert)
+            
+            if dobField.text == "" {
+                dobAlert.message = "You need to fill your dog's weight."
+            }
+            else {
+                dobAlert.title = "Date invalid."
+                dobAlert.message = "Please input the correct date."
+            }
             dobAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
             self.present(dobAlert, animated: true)
         }
-        else if weightField.text == "" {
-            let weightAlert = UIAlertController(title: "Weight required.", message: "You need to fill your dog's weight.", preferredStyle: .alert)
+        else if weightField.text == "" || !isNumericalOnly(text: weightField.text!) {
+            let weightAlert = UIAlertController(title: "Weight required.", message: "Your dog's weight is out of the world.", preferredStyle: .alert)
+            
+            if weightField.text == "" {
+                weightAlert.message = "You need to fill your dog's weight."
+            }
+            else {
+                weightAlert.title = "Weight invalid."
+                weightAlert.message = "Your dog's weight should be numerical only."
+            }
             weightAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
             self.present(weightAlert, animated: true)
@@ -96,6 +112,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //print(Date())
         breedImage.image = transferedBreedImage
         breedLabel.text = transferedBreedName
         yellowCircle.layer.cornerRadius = yellowCircle.frame.width/2
@@ -104,7 +121,7 @@ class RegisterViewController: UIViewController {
         registerDone.layer.cornerRadius = registerDone.frame.size.height/2
         registerDone.clipsToBounds = true
         registerDone.layer.borderWidth = 1
-        registerDone.layer.borderColor = UIColor.blue.cgColor
+        registerDone.layer.borderColor = #colorLiteral(red: 0, green: 0.4745098039, blue: 1, alpha: 1)
        
         //pick dob
         datePicker = UIDatePicker()
@@ -120,7 +137,7 @@ class RegisterViewController: UIViewController {
         //input weight
      // weightField.delegate = self
         weightField.keyboardType = UIKeyboardType.numberPad
-//        createWeightPicker()
+//      createWeightPicker()
         
         //keyboard
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object:nil)
@@ -130,6 +147,15 @@ class RegisterViewController: UIViewController {
     func confirmRegistration() {
         performSegue(withIdentifier: "goToDashboard", sender: self)
         
+    }
+    
+    // Check whether a string only has number or not
+    func isNumericalOnly(text: String) -> Bool {
+        guard let convertedString = Int(text) else { return false }
+        
+        print(convertedString)
+        
+        return true
     }
     
  
@@ -162,6 +188,17 @@ class RegisterViewController: UIViewController {
             self.view.frame.origin.y = 0
         }
     }
+    
+    func isYearValid(chosenDate: Date/*, date2: Date, nYears: Int*/) -> Bool {
+        let todayDate = Date()
+        
+        if chosenDate > todayDate {
+            return false
+        }
+        
+        return true
+    }
+    
 //    func numberOfComponents(in pickerView: UIPickerView) -> Int {
 //        return 1
 //    }
