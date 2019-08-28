@@ -71,11 +71,11 @@ class RegisterViewController: UIViewController {
             let dobAlert = UIAlertController(title: "Date of Birth required.", message: "You need to fill your dog's birth date.", preferredStyle: .alert)
             
             if dobField.text == "" {
-                dobAlert.message = "You need to fill your dog's weight."
+                dobAlert.message = "You need to fill your dog's birth date."
             }
             else {
                 dobAlert.title = "Date invalid."
-                dobAlert.message = "Please input the correct date."
+                dobAlert.message = "Are you from the future?"
             }
             dobAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
