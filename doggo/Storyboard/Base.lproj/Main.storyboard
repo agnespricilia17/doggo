@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your dog breed?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruy-qR-rFr">
-                                <rect key="frame" x="38" y="131" width="338" height="36"/>
+                                <rect key="frame" x="38" y="159" width="338" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -245,7 +245,7 @@
         <scene sceneID="uwe-NC-rNQ">
             <objects>
                 <viewControllerPlaceholder storyboardName="Health" id="hJM-GS-Wge" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0hT-bB-uC1"/>
+                    <tabBarItem key="tabBarItem" title="asd" image="favorite-heart-button" id="0hT-bB-uC1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYs-Uc-Ch6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +265,7 @@
         <scene sceneID="5bs-Vc-3Z7">
             <objects>
                 <viewControllerPlaceholder storyboardName="Dashboard" id="mqv-CK-UFt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sIM-qB-kNq"/>
+                    <tabBarItem key="tabBarItem" title="ASD" image="tab" id="sIM-qB-kNq"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6V5-Si-QMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,7 +273,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="favorite-heart-button" width="13.5" height="12.5"/>
         <image name="male gender" width="298" height="298"/>
+        <image name="tab" width="25" height="25"/>
         <image name="women gender" width="222" height="330"/>
     </resources>
 </document>
