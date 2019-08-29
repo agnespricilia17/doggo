@@ -138,6 +138,10 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         dogScrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
         dogScrollView.isPagingEnabled = true
         
+        // Setting inset to fix the image in place
+        dogScrollView.contentInset.top = 0
+        dogScrollView.contentInset.bottom = 0
+        
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
             dogScrollView.addSubview(slides[i])
