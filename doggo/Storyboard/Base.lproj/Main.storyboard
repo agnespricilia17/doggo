@@ -35,7 +35,7 @@
         <!--Choose Breed Controller-->
         <scene sceneID="J9A-l2-Sf7">
             <objects>
-                <viewController id="BCx-5s-vax" userLabel="Choose Breed Controller" customClass="ChooseBreedViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Choose Breed Controller" storyboardIdentifier="Choose Breed Controller" hidesBottomBarWhenPushed="YES" id="BCx-5s-vax" userLabel="Choose Breed Controller" customClass="ChooseBreedViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pQv-XN-eOu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -80,7 +80,7 @@
         <!--Register Controller-->
         <scene sceneID="b66-Q3-8i5">
             <objects>
-                <viewController title="Register" id="yuR-l5-UEm" userLabel="Register Controller" customClass="RegisterViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" hidesBottomBarWhenPushed="YES" id="yuR-l5-UEm" userLabel="Register Controller" customClass="RegisterViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GiW-zh-CmU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

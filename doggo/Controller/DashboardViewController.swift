@@ -87,6 +87,11 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         foodButton.layer.cornerRadius = foodButton.frame.height/4
         groomingButton.layer.cornerRadius = groomingButton.frame.height/4
         checkUpButton.layer.cornerRadius = checkUpButton.frame.height/4
+        
+        // Set up navigation bar item for adding new dog
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewDogButton))
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -96,6 +101,12 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     func setDogName(name: String, breed: String) {
         dogName.text = name
         dogBreed.text = breed
+    }
+    
+    // Adding new dog to the list
+    @objc func addNewDogButton() {
+        performSegue(withIdentifier: "addNewDogSegue", sender: self)
+        
     }
     
     @IBAction func foodPageButton(_ sender: Any) {

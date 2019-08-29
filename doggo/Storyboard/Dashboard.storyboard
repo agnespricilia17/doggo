@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Choose Breed Controller-->
+        <scene sceneID="rWe-H9-C0b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Choose Breed Controller" id="WkW-J1-nmj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wT-eq-qOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="1207"/>
+        </scene>
         <!--Dashboard-->
         <scene sceneID="UJB-7R-NBv">
             <objects>
@@ -193,6 +201,7 @@
                         <segue destination="wb7-E0-Ji1" kind="show" identifier="goToAddFoodSchedule" id="fu1-ZG-Lj3"/>
                         <segue destination="ioi-a7-l7T" kind="show" identifier="goToAddGroomingSchedule" id="3o8-gK-X6c"/>
                         <segue destination="dV0-J4-FOY" kind="show" identifier="goToAddCheckUpSchedule" id="Xuy-u2-Jqm"/>
+                        <segue destination="WkW-J1-nmj" kind="show" identifier="addNewDogSegue" id="crQ-rQ-GeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irc-ez-WgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
