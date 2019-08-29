@@ -9,10 +9,7 @@
 import UIKit
 
 class DashboardViewController: UIViewController, UIScrollViewDelegate {
-    
-    // Element
-    @IBOutlet weak var yellowCircle: UIView!
-    
+
     // Data and Texts
     @IBOutlet weak var dogName: UILabel!
     @IBOutlet weak var dogBreed: UILabel!
@@ -46,8 +43,6 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        yellowCircle.layer.cornerRadius = yellowCircle.frame.width / 2
         
         // Setting up initial dog's name and breed
         setDogName(name: "Fluffy Bun", breed: "Golden Retriever")
@@ -64,7 +59,6 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         // Bringing all the elements in front of the new scrollview xib
         view.bringSubviewToFront(dogName)
         view.bringSubviewToFront(dogBreed)
-        view.bringSubviewToFront(yellowCircle)
         view.bringSubviewToFront(bubbleMessage)
         view.bringSubviewToFront(bubbleView)
         view.bringSubviewToFront(scheduleLabel)
