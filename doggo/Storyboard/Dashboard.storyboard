@@ -173,7 +173,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="d3u-IH-97j"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="DQD-Us-YKV"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tab" id="DQD-Us-YKV"/>
                     <navigationItem key="navigationItem" title="Home" id="phn-3e-19f"/>
                     <connections>
                         <outlet property="bubbleMessage" destination="9H8-9L-nSO" id="q6Z-UA-Zdi"/>

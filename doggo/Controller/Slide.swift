@@ -18,5 +18,4 @@ class Slide: UIView {
 
     @IBOutlet weak var btnStart: UIButton!
     
-
 }
