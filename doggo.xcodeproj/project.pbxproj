@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2C0AC4231525BB0034801A /* AddFoodScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C0AC3231525BB0034801A /* AddFoodScheduleViewController.swift */; };
+		1E2C0AC6231525C80034801A /* AddGroomingScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C0AC5231525C80034801A /* AddGroomingScheduleViewController.swift */; };
+		1E2C0AC8231525D30034801A /* AddCheckUpScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C0AC7231525D30034801A /* AddCheckUpScheduleViewController.swift */; };
 		1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACEC042314E4C900D88164 /* PhotoSlide.swift */; };
 		1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACEC062314E4FC00D88164 /* PhotoSlide.xib */; };
 		8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
@@ -58,6 +61,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2C0AC3231525BB0034801A /* AddFoodScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodScheduleViewController.swift; sourceTree = "<group>"; };
+		1E2C0AC5231525C80034801A /* AddGroomingScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroomingScheduleViewController.swift; sourceTree = "<group>"; };
+		1E2C0AC7231525D30034801A /* AddCheckUpScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCheckUpScheduleViewController.swift; sourceTree = "<group>"; };
 		1EACEC042314E4C900D88164 /* PhotoSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSlide.swift; sourceTree = "<group>"; };
 		1EACEC062314E4FC00D88164 /* PhotoSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSlide.xib; sourceTree = "<group>"; };
 		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +191,9 @@
 				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
 				C524EFC5230CFD9B00EAE665 /* SlideView.xib */,
 				E69E84EC2313CAED008D3037 /* breedSlideView.xib */,
+				1E2C0AC3231525BB0034801A /* AddFoodScheduleViewController.swift */,
+				1E2C0AC5231525C80034801A /* AddGroomingScheduleViewController.swift */,
+				1E2C0AC7231525D30034801A /* AddCheckUpScheduleViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,14 +341,17 @@
 				E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */,
 				9211A277231389D500614EED /* CustomSegments.swift in Sources */,
 				9211A275231389B700614EED /* DogChartData.swift in Sources */,
+				1E2C0AC4231525BB0034801A /* AddFoodScheduleViewController.swift in Sources */,
 				9211A28123138A2900614EED /* ChartPresenter.swift in Sources */,
 				E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */,
 				9211A27D23138A0300614EED /* ArrayExtension.swift in Sources */,
 				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,
 				E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */,
+				1E2C0AC8231525D30034801A /* AddCheckUpScheduleViewController.swift in Sources */,
 				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
 				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
 				C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */,
+				1E2C0AC6231525C80034801A /* AddGroomingScheduleViewController.swift in Sources */,
 				1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */,
 				8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */,
 			);

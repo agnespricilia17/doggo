@@ -19,6 +19,7 @@ class PhotoSlide: UIView {
     */
 
     @IBOutlet weak var dogImage: UIImageView!
+    @IBOutlet weak var yellowBackground: UIView!
 }
 
 

@@ -9,10 +9,7 @@
 import UIKit
 
 class DashboardViewController: UIViewController, UIScrollViewDelegate {
-    
-    // Element
-    @IBOutlet weak var yellowCircle: UIView!
-    
+
     // Data and Texts
     @IBOutlet weak var dogName: UILabel!
     @IBOutlet weak var dogBreed: UILabel!
@@ -46,11 +43,9 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        yellowCircle.layer.cornerRadius = yellowCircle.frame.width / 2
         
-        // Setting up dog's name and breed
-        setDogName()
+        // Setting up initial dog's name and breed
+        setDogName(name: "Fluffy Bun", breed: "Golden Retriever")
         
         // Setting up scroll view for dog lists
         dogScrollView.delegate = self
@@ -61,9 +56,9 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         dogPageControl.currentPage = 0
         view.bringSubviewToFront(dogPageControl)
         
+        // Bringing all the elements in front of the new scrollview xib
         view.bringSubviewToFront(dogName)
         view.bringSubviewToFront(dogBreed)
-        view.bringSubviewToFront(yellowCircle)
         view.bringSubviewToFront(bubbleMessage)
         view.bringSubviewToFront(bubbleView)
         view.bringSubviewToFront(scheduleLabel)
@@ -82,33 +77,52 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         view.bringSubviewToFront(checkUpSecondaryLabel)
         view.bringSubviewToFront(checkUpIcon)
         view.bringSubviewToFront(checkUpIconLabel)
+
         
         // Set the text to be displayed in bubble here
         createBubbleShape(view: bubbleView)
         produceBubbleMessage(text: "Feed me bitjh!")
         
         // Do any additional setup after loading the view.
+        foodButton.layer.cornerRadius = foodButton.frame.height/4
+        groomingButton.layer.cornerRadius = groomingButton.frame.height/4
+        checkUpButton.layer.cornerRadius = checkUpButton.frame.height/4
+        
+        // Set up navigation bar item for adding new dog
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewDogButton))
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    func setDogName() {
-        dogName.text = "Fluffy Bun"
-        dogBreed.text = "Golden Retriever"
+    func setDogName(name: String, breed: String) {
+        dogName.text = name
+        dogBreed.text = breed
+    }
+    
+    // Adding new dog to the list
+    @objc func addNewDogButton() {
+        performSegue(withIdentifier: "addNewDogSegue", sender: self)
+        
     }
     
     @IBAction func foodPageButton(_ sender: Any) {
         // Go to Food page
+        performSegue(withIdentifier: "goToAddFoodSchedule", sender: self)
+        
     }
     
     @IBAction func groomPageButton(_ sender: Any) {
         // Go to Grooming page
+        performSegue(withIdentifier: "goToAddGroomingSchedule", sender: self)
     }
     
     @IBAction func checkUpPageButton(_ sender: Any) {
         // Go to Check Up page
+        performSegue(withIdentifier: "goToAddCheckUpSchedule", sender: self)
     }
     
 ////////////////////////////////////////////////////////////////////
@@ -116,13 +130,16 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     func createSlides() -> [PhotoSlide] {
         
         let slide1:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
-        slide1.dogImage.image = UIImage(named: "labrador_retriever_PNG81")
+        slide1.dogImage.image = UIImage(named: "golden retriever asset")
+        slide1.yellowBackground.layer.cornerRadius = slide1.yellowBackground.frame.width/2
         
         let slide2:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
-        slide2.dogImage.image = UIImage(named: "labrador_retriever_PNG81")
+        slide2.dogImage.image = UIImage(named: "golden retriever asset")
+        slide2.yellowBackground.layer.cornerRadius = slide2.yellowBackground.frame.width/2
         
         let slide3:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
-        slide3.dogImage.image = UIImage(named: "labrador_retriever_PNG81")
+        slide3.dogImage.image = UIImage(named: "golden retriever asset")
+        slide3.yellowBackground.layer.cornerRadius = slide3.yellowBackground.frame.width/2
         
         return [slide1, slide2, slide3]
     }
@@ -131,6 +148,10 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         dogScrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         dogScrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
         dogScrollView.isPagingEnabled = true
+        
+        // Setting inset to fix the image in place
+        dogScrollView.contentInset.top = 0
+        dogScrollView.contentInset.bottom = 0
         
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
@@ -142,15 +163,27 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         dogPageControl.currentPage = Int(pageIndex)
         
+        // Check which dog is it on the show
+        if dogPageControl.currentPage == 0 {
+            setDogName(name: "Fluffy Puff", breed: "Golden Retriever")
+        }
+        else if dogPageControl.currentPage == 1 {
+            setDogName(name: "Fluffy Bun", breed: "Golden Retriever")
+        }
+        else if dogPageControl.currentPage == 2 {
+            setDogName(name: "Fluffy Pun", breed: "Golden Retriever")
+        }
+        
         let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
         let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
         
         // vertical
         let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
-        let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
+        let currentVerticalOffset: CGFloat = 0
         
         let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
         let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
+        
     }
     
 //////////////////////////////////////////////////////////////////////
@@ -193,9 +226,9 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     // Create bubble message; *set for daily random message*
     func produceBubbleMessage(text: String) {
-        //        bubbleMessage.numberOfLines = 0
-        //        bubbleMessage.font = UIFont.systemFont(ofSize: 14)
-        //        bubbleMessage.textColor = .black
+        //  bubbleMessage.numberOfLines = 0
+        //  bubbleMessage.font = UIFont.systemFont(ofSize: 14)
+        //  bubbleMessage.textColor = .black
         bubbleMessage.text = text
         
         let constraintRect = CGSize(width: 0.66 * view.frame.width,
@@ -207,12 +240,12 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         bubbleMessage.frame.size = CGSize(width: ceil(boundingBox.width),
                                   height: ceil(boundingBox.height))
         
-//        let bubbleSize = CGSize(width: bubbleMessage.frame.width + 2,
-//                                height: bubbleMessage.frame.height + 2)
-//
-//        bubbleView.frame.size = bubbleSize
+    //  let bubbleSize = CGSize(width: bubbleMessage.frame.width + 2,
+    //                                height: bubbleMessage.frame.height + 2)
+    //
+    //  bubbleView.frame.size = bubbleSize
         
-//        bubbleMessage.center = bubbleView.center
+    //  bubbleMessage.center = bubbleView.center
         print(bubbleMessage.text)
     }
 
