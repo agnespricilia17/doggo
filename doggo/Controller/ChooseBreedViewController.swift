@@ -21,7 +21,7 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         let slide1:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide1.breedView.image = UIImage(named: "beagle asset")
         slide1.breedName.text = "Beagle"
-        slide1.breedDesc.text = "Gentle and outgoing, great for any family.  Beagle is an easygoing dog that perfect for companion for big families and new dog owners. Small dog category. Hound blood gives the a loyal and tenacious character."
+        slide1.breedDesc.text = "Gentle and outgoing, great for any family.  Easygoing dog that perfect for companion. Small dog category. Loyal and tenacious character."
         
         let slide2:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide2.breedView.image = UIImage(named: "border collie asset")
@@ -150,10 +150,12 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         prevX = currentX
+        nextButton.isEnabled = false
         
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         //kiriAtauKananSebelumnya = ""
+        nextButton.isEnabled = true
         currentX = scrollView.contentOffset.x
         let jarakAntarSlide = 414
         var perbedaan = Int(abs(currentX - prevX))
@@ -204,7 +206,7 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         nextButton.layer.cornerRadius = nextButton.frame.size.height/2
         nextButton.clipsToBounds = true
         nextButton.layer.borderWidth = 1
-        nextButton.layer.borderColor = UIColor.blue.cgColor
+        nextButton.layer.borderColor = #colorLiteral(red: 0, green: 0.4745098039, blue: 1, alpha: 1)
         
         self.breedScrollView.delegate = self
         
@@ -215,6 +217,7 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         
         view.bringSubviewToFront(askBreedLabel)
         view.bringSubviewToFront(nextButton)
+        
 
     }
     

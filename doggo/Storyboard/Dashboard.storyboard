@@ -176,7 +176,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="d3u-IH-97j"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="DQD-Us-YKV"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tab" id="DQD-Us-YKV"/>
                     <connections>
                         <outlet property="bubbleMessage" destination="9H8-9L-nSO" id="q6Z-UA-Zdi"/>
                         <outlet property="bubbleView" destination="alo-cj-okn" id="3KQ-Vu-gSY"/>
@@ -240,5 +240,6 @@
     </scenes>
     <resources>
         <image name="labrador_retriever_PNG81" width="204" height="361"/>
+        <image name="tab" width="25" height="25"/>
     </resources>
 </document>
