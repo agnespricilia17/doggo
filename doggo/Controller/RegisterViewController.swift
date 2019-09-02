@@ -33,6 +33,7 @@ class RegisterViewController: UIViewController {
     
     var transferedBreedName:String?
     var transferedBreedImage:UIImage?
+    var transferedBreedSize:String?
     
     @IBAction func maleChoose(_ sender: Any) {
         isMale = true
@@ -149,8 +150,32 @@ class RegisterViewController: UIViewController {
     }
     
     func confirmRegistration() {
+        saveData()
         performSegue(withIdentifier: "goToDashboard", sender: self)
         
+    }
+    
+    func saveData() {
+        let coreDataHelper = CoreDataHelper()
+        
+        let gender = { () -> String in
+            if self.isMale! {
+                return "Male"
+            }
+            else {
+               return "Female"
+            }
+        }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let weightNumber = Int(weightField.text!)
+        let birthDate = dateFormatter.date(from: dobField.text!)
+        let weight = WeightModel(amount: weightNumber!, date: birthDate!)
+        
+        
+        let registeredDog = DogModel(name: nameField.text!, breedType: breedLabel.text!, breedSize: transferedBreedSize!, birthDate: birthDate!, gender: gender(), weight: weight, picture: breedLabel.text!)
+        
+        coreDataHelper.save(model: registeredDog)
     }
     
     // Check whether a string only has number or not

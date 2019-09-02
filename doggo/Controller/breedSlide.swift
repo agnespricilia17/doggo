@@ -21,4 +21,5 @@ class breedSlide: UIView {
     @IBOutlet weak var breedName: UILabel!
     @IBOutlet weak var breedDesc: UILabel!
     
+    var breedSize:String!
 }

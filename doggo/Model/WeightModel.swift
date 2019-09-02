@@ -9,6 +9,6 @@
 import Foundation
 
 struct WeightModel {
-    var amount:Float
+    var amount:Int
     var date:Date
 }

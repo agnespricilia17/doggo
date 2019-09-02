@@ -54,7 +54,7 @@ class CoreDataHelper {
         dog.size = model.breedSize
         dog.gender = model.gender
         
-        dogWeight.amount = model.weight.amount
+        dogWeight.amount = Int32(model.weight.amount)
         dogWeight.date = model.weight.date
         dog.addToWeight(dogWeight)
         

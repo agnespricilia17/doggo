@@ -41,9 +41,21 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var checkUpIcon: UIImageView!
     @IBOutlet weak var checkUpIconLabel: UILabel!
     
+    var dogs:[Dog]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let coreDataHelper = CoreDataHelper()
+        dogs = coreDataHelper.fetch(entityName: "Dog")
+        for dog in dogs! {
+            print("Name  \(dog.name)")
+            print("Birth  \(dog.birthdate)")
+            print("Bre  \(dog.breed)")
+            print("Siz  \(dog.size)")
+            print("Gen  \(dog.gender)")
+            print("Pic  \(dog.picture)")
+        }
         // Setting up initial dog's name and breed
         setDogName(name: "Fluffy Bun", breed: "Golden Retriever")
         

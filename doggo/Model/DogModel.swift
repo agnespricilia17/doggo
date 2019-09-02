@@ -14,6 +14,6 @@ struct DogModel {
     var breedSize:String
     var birthDate:Date
     var gender:String
-    var weight:Weight
+    var weight:WeightModel
     var picture:String
 }
