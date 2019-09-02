@@ -29,6 +29,8 @@ class WeightViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Weight"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
         
         let date = Date()
         let format = DateFormatter()
@@ -106,6 +108,8 @@ class WeightViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
+    @objc func addTapped(){
+        self.performSegue(withIdentifier: "addWeightSegue", sender: self)
+    }
     
 }

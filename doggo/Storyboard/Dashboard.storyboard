@@ -523,5 +523,6 @@
         <image name="dog-bone" width="50" height="50"/>
         <image name="openned-scissors" width="40" height="50"/>
         <image name="plus-black-symbol" width="50" height="50"/>
+        <image name="tab" width="25" height="25"/>
     </resources>
 </document>

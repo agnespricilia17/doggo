@@ -24,6 +24,7 @@ class AddCheckUpScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.title = "Add Check Up Schedule"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveCheckUpSchedule))
         
         // Do any additional setup after loading the view.

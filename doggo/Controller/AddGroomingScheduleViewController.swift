@@ -25,6 +25,7 @@ class AddGroomingScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Add Grooming Schedule"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveGroomingSchedule))
         
         // Do any additional setup after loading the view.

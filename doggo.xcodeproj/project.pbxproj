@@ -13,6 +13,7 @@
 		1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACEC042314E4C900D88164 /* PhotoSlide.swift */; };
 		1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACEC062314E4FC00D88164 /* PhotoSlide.xib */; };
 		8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
+		8AFFC0A3231CC330004E84A7 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */; };
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
@@ -67,6 +68,7 @@
 		1EACEC042314E4C900D88164 /* PhotoSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSlide.swift; sourceTree = "<group>"; };
 		1EACEC062314E4FC00D88164 /* PhotoSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSlide.xib; sourceTree = "<group>"; };
 		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
+		8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				1E2C0AC3231525BB0034801A /* AddFoodScheduleViewController.swift */,
 				1E2C0AC5231525C80034801A /* AddGroomingScheduleViewController.swift */,
 				1E2C0AC7231525D30034801A /* AddCheckUpScheduleViewController.swift */,
+				8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */,
 				E69E84EB2313CABC008D3037 /* breedSlide.swift in Sources */,
 				E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */,
+				8AFFC0A3231CC330004E84A7 /* AddWeightViewController.swift in Sources */,
 				9211A277231389D500614EED /* CustomSegments.swift in Sources */,
 				9211A275231389B700614EED /* DogChartData.swift in Sources */,
 				1E2C0AC4231525BB0034801A /* AddFoodScheduleViewController.swift in Sources */,
@@ -500,7 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WPQ9HAVPNV;
+				DEVELOPMENT_TEAM = RZHN8D842K;
 				INFOPLIST_FILE = doggo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WPQ9HAVPNV;
+				DEVELOPMENT_TEAM = RZHN8D842K;
 				INFOPLIST_FILE = doggo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

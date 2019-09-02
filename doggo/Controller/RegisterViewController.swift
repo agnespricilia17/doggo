@@ -128,9 +128,10 @@ class RegisterViewController: UIViewController {
         datePicker?.datePickerMode = .date
         datePicker?.addTarget(self, action: #selector(RegisterViewController.dateChanged(datePicker:)), for: .valueChanged)
         
-        let tapDobGesture = UITapGestureRecognizer(target: self, action: #selector(RegisterViewController.viewTapped(gestureRecognizer:)))
-        
-        view.addGestureRecognizer(tapDobGesture)
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+        }
         
         dobField.inputView = datePicker
         
