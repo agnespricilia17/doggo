@@ -23,11 +23,18 @@ class FoodViewController: UIViewController {
     @IBOutlet weak var gramLabel: UILabel!
     @IBOutlet weak var kcalAmountLabel: UILabel!
     
+    @IBOutlet weak var dogName: UILabel!
+    @IBOutlet weak var dogBreed: UILabel!
+    
     var passedWeight:Int = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Food"
+        
+        dogName.text = dogs[currentDog].name
+        dogBreed.text = dogs[currentDog].breed
+        
         // Do any additional setup after loading the view.
         UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
             self.weightLabel.frame.origin.y += CGFloat(self.passedWeight)

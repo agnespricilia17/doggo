@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Food Controller-->
@@ -21,14 +23,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fluffy Bun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apm-oP-j0t">
-                                <rect key="frame" x="20" y="164" width="148" height="41"/>
+                                <rect key="frame" x="20" y="164" width="234" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="St.Bernard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttG-zQ-iIb">
-                                <rect key="frame" x="20" y="213" width="82" height="21"/>
+                                <rect key="frame" x="20" y="213" width="200" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,6 +151,8 @@ over 100 kg of body weight. </string>
                     <connections>
                         <outlet property="cupLabel" destination="gdg-ex-glZ" id="F1Z-wu-q8O"/>
                         <outlet property="cupNumberLabel" destination="rEH-wJ-73M" id="EqU-KA-2HG"/>
+                        <outlet property="dogBreed" destination="ttG-zQ-iIb" id="5yI-dL-x2w"/>
+                        <outlet property="dogName" destination="apm-oP-j0t" id="R8i-Pr-PZu"/>
                         <outlet property="gramLabel" destination="94k-wa-9zv" id="xLY-B1-s83"/>
                         <outlet property="gramNumberLabel" destination="8SI-pa-5AX" id="MSs-Js-6un"/>
                         <outlet property="indicatorToTheLeftImageView" destination="xoa-PY-Q5O" id="89e-g8-hC7"/>

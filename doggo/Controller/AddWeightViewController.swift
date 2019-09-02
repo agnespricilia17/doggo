@@ -60,7 +60,12 @@ class AddWeightViewController: UIViewController, UITextFieldDelegate {
     }
     @objc func addTapped(){
 //        self.performSegue(withIdentifier: "addWeightSegue", sender: self)
-        print("added")
+        let coreDataHelper = CoreDataHelper()
+        let weightValue = Int(weightTextField.text!)
+        let currentDate = Date()
+        let updatedWeight = WeightModel(amount: weightValue!, date: weightDatePicker.date)
+        coreDataHelper.addWeight(entityName: "Dog", searchString: dogs[currentDog].name!, updatedWeight: updatedWeight)
+        navigationController?.popViewController(animated: true)
     }
     
 //    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {

@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fluffy Bun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yER-j8-5NJ">
-                                <rect key="frame" x="20" y="169" width="148" height="41"/>
+                                <rect key="frame" x="20" y="169" width="206" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="St. Bernard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="div-6p-GzS">
-                                <rect key="frame" x="20" y="218" width="87" height="21"/>
+                                <rect key="frame" x="20" y="218" width="189" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,6 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="qph-7h-7wb"/>
                     </view>
                     <connections>
+                        <outlet property="chartView" destination="oHW-Jk-wcf" id="QwS-9m-PaH"/>
                         <outlet property="currentWeightLabel" destination="Shc-NJ-CN7" id="KAV-Rg-WDo"/>
                         <outlet property="dogBreedLabel" destination="div-6p-GzS" id="GGl-LJ-93A"/>
                         <outlet property="dogNameLabel" destination="yER-j8-5NJ" id="fFg-wH-Aff"/>

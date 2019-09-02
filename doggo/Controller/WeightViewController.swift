@@ -20,15 +20,56 @@ class WeightViewController: UIViewController {
     @IBOutlet weak var weightSlider: UISlider!
     @IBOutlet weak var dogWeightInfoLabel: UILabel!
     
+    @IBOutlet weak var chartView: UIView!
+    
     //    var gradientLayer: CAGradientLayer!
     
     var myMutableString = NSMutableAttributedString()
     
     var infoString:String = ""
+    var currentWeight = 0
+    var dataEntries:[DogChartData] = [
+        //DogChartData(color: UIColor.red, height: Float.random(in: 0.1...1), textValue: String(currentWeight), title: todayDateLabel!.text!)
+    ]
+    var dogWeights:[Weight] = []
+    
+    var chart:ChartView?
+    
+    func updateTable() {
+        for dogWeight in dogWeights {
+            let dateFormat = DateFormatter()
+            dateFormat.dateFormat = "dd/MM/yyyy"
+            if dateFormat.string(from: dogWeight.date!) == dateFormat.string(from: Date()) {
+                currentWeightLabel.text = String(dogWeight.amount)
+                currentWeight = Int(dogWeight.amount)
+            }
+            dataEntries.append(DogChartData(color: UIColor.red, height: Float.random(in: 0.1...1), textValue: String(dogWeight.amount), title: dateFormat.string(from: dogWeight.date!)))
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        dogWeights = dogs[currentDog].weightOfDog?.allObjects as! [Weight]
+        dataEntries.removeAll()
+        updateTable()
+        chart!.updateDataEntries(dataEntries: dataEntries, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Weight"
+        
+        dogNameLabel.text = dogs[currentDog].name
+        dogBreedLabel.text = dogs[currentDog].breed
+        
+        chartView.backgroundColor = .white
+        chartView.layer.borderWidth = 2.0
+        chartView.layer.borderColor = UIColor.blue.cgColor
+        chart = ChartView(frame: CGRect(x: 0, y: 0, width: chartView.frame.maxX, height: 300))
+        
+        self.chartView.addSubview(chart!)
+        
+        weightSlider.value = Float(currentWeight)
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
         //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
         

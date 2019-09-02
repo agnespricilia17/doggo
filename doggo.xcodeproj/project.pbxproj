@@ -29,6 +29,7 @@
 		9211A27F23138A0F00614EED /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A27E23138A0F00614EED /* ChartView.swift */; };
 		9211A28123138A2900614EED /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A28023138A2900614EED /* ChartPresenter.swift */; };
 		9211A28323138A3B00614EED /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A28223138A3B00614EED /* ChartData.swift */; };
+		9211A289231CFEB400614EED /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A288231CFEB400614EED /* GlobalVariable.swift */; };
 		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
 		E69E84EB2313CABC008D3037 /* breedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E84EA2313CABC008D3037 /* breedSlide.swift */; };
@@ -83,6 +84,7 @@
 		9211A27E23138A0F00614EED /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		9211A28023138A2900614EED /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		9211A28223138A3B00614EED /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		9211A288231CFEB400614EED /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				E6F289B2230BCF6100784315 /* Controller */,
 				E6F289B0230BCF1D00784315 /* Model */,
 				E6F2899B230B878600784315 /* AppDelegate.swift */,
+				9211A288231CFEB400614EED /* GlobalVariable.swift */,
 				E6F289AA230B878700784315 /* Info.plist */,
 				E6F289A2230B878600784315 /* doggo.xcdatamodeld */,
 				E69E84EE231507CB008D3037 /* Assets.xcassets */,
@@ -331,6 +334,7 @@
 				9211A27B231389F400614EED /* CALayerExtension.swift in Sources */,
 				E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */,
 				E6F2899C230B878600784315 /* AppDelegate.swift in Sources */,
+				9211A289231CFEB400614EED /* GlobalVariable.swift in Sources */,
 				E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */,
 				E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */,
 				E6F289C2230BD52100784315 /* FoodViewController.swift in Sources */,

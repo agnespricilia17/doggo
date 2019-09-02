@@ -167,10 +167,10 @@ class RegisterViewController: UIViewController {
             }
         }
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
+        dateFormatter.dateFormat = "dd/MM/yyyy"
         let weightNumber = Int(weightField.text!)
         let birthDate = dateFormatter.date(from: dobField.text!)
-        let weight = WeightModel(amount: weightNumber!, date: birthDate!)
+        let weight = WeightModel(amount: weightNumber!, date: Date())
         
         
         let registeredDog = DogModel(name: nameField.text!, breedType: breedLabel.text!, breedSize: transferedBreedSize!, birthDate: birthDate!, gender: gender(), weight: weight, picture: breedLabel.text!)

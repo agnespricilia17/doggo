@@ -8,7 +8,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="weight" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Weight" syncable="YES"/>
+        <relationship name="weightOfDog" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Weight" syncable="YES"/>
     </entity>
     <entity name="Weight" representedClassName="Weight" syncable="YES" codeGenerationType="class">
         <attribute name="amount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -16,7 +16,7 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Dog" positionX="-338.3984375" positionY="-66.19921875" width="128" height="163"/>
+        <element name="Dog" positionX="-338.3984375" positionY="-66.19921875" width="128" height="165"/>
         <element name="Weight" positionX="-93.07421875" positionY="-14.36328125" width="128" height="90"/>
     </elements>
 </model>

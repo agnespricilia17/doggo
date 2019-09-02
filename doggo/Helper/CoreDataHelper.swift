@@ -56,7 +56,7 @@ class CoreDataHelper {
         
         dogWeight.amount = Int32(model.weight.amount)
         dogWeight.date = model.weight.date
-        dog.addToWeight(dogWeight)
+        dog.addToWeightOfDog(dogWeight)
         
         dog.picture = model.picture
         
@@ -70,7 +70,7 @@ class CoreDataHelper {
     }
     
     
-    func addWeight(entityName : String, searchString: String, updatedWeight: Weight) {
+    func addWeight(entityName : String, searchString: String, updatedWeight: WeightModel) {
         let result:[Dog] = fetch(entityName: entityName)
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -82,14 +82,14 @@ class CoreDataHelper {
         
         let dogWeight = Weight(context: managedContext)
         
-        dogWeight.amount = updatedWeight.amount
+        dogWeight.amount = Int32(updatedWeight.amount)
         dogWeight.date = updatedWeight.date
         
         var isDataFound = false
         for data in result {
             if data.name == searchString {
                 let dog = data as Dog
-                dog.addToWeight(dogWeight)
+                dog.addToWeightOfDog(dogWeight)
                 isDataFound = true
                 break
             }

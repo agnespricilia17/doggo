@@ -41,8 +41,6 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var checkUpIcon: UIImageView!
     @IBOutlet weak var checkUpIconLabel: UILabel!
     
-    var dogs:[Dog]?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,7 +56,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
 //        }
         
         // Setting up initial dog's name and breed
-        setDogName(name: dogs![0].name!, breed: dogs![0].breed!)
+        setDogName(name: dogs[0].name!, breed: dogs[0].breed!)
         
         // Setting up scroll view for dog lists
         dogScrollView.delegate = self
@@ -142,7 +140,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     func createSlides() -> [PhotoSlide] {
         var dogSlides:[PhotoSlide] = []
-        for dog in dogs! {
+        for dog in dogs {
             let slide:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
             print("The PIC : \(dog.picture!)")
             slide.dogImage.image = UIImage(named: dog.picture!)
@@ -173,6 +171,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         dogPageControl.currentPage = Int(pageIndex)
+        currentDog = dogPageControl.currentPage
         let currentDog = slides[dogPageControl.currentPage]
         setDogName(name: currentDog.dogName, breed: currentDog.dogBreed)
         
