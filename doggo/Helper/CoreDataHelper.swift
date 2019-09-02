@@ -70,7 +70,7 @@ class CoreDataHelper {
     }
     
     
-    func update(entityName : String, searchString: String, updatedWeight: Weight) {
+    func addWeight(entityName : String, searchString: String, updatedWeight: Weight) {
         let result:[Dog] = fetch(entityName: entityName)
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate

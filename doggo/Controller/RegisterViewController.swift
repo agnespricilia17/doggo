@@ -143,6 +143,9 @@ class RegisterViewController: UIViewController {
         //keyboard
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object:nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object:nil)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     func confirmRegistration() {
@@ -167,7 +170,7 @@ class RegisterViewController: UIViewController {
        // view.endEditing(true)
     }
     
-    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     

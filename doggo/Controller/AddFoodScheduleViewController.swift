@@ -30,7 +30,7 @@ class AddFoodScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Add Food Schedule"
+        self.navigationItem.title = "Food"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveFoodSchedule))
         
         timeFormatter.timeStyle = DateFormatter.Style.short
