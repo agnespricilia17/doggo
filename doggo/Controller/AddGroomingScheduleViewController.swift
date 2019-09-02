@@ -36,7 +36,13 @@ class AddGroomingScheduleViewController: UIViewController {
     @objc func saveGroomingSchedule() {
         // Saving to core data
         /* Write here*/
-        
+        let savedString1 = self.dateLabel.text
+        let userDefaults1 = Foundation.UserDefaults.standard
+        userDefaults1.set(savedString1, forKey: "Groom Date")
+        let savedString2 = self.timeLabel.text
+        let userDefaults2 = Foundation.UserDefaults.standard
+        userDefaults2.set(savedString2, forKey: "Groom Time")
+        print("save groom")
         /*dismiss(animated: true, completion: nil)*/
     }
     

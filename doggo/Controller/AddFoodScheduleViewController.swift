@@ -47,8 +47,21 @@ class AddFoodScheduleViewController: UIViewController {
     @objc func saveFoodSchedule() {
         // Saving to core data
         /* Write here*/
+        let savedString1 = self.label1.text
+        let userDefaults1 = Foundation.UserDefaults.standard
+        userDefaults1.set(savedString1, forKey: "Food 1")
+        let savedString2 = self.label2.text
+        let userDefaults2 = Foundation.UserDefaults.standard
+        userDefaults2.set(savedString2, forKey: "Food 2")
+        let savedString3 = self.label3.text
+        let userDefaults3 = Foundation.UserDefaults.standard
+        userDefaults3.set(savedString3, forKey: "Food 3")
+        let savedString4 = self.label4.text
+        let userDefaults4 = Foundation.UserDefaults.standard
+        userDefaults4.set(savedString4, forKey: "Food 4")
         
         /*dismiss(animated: true, completion: nil)*/
+        print("save tapped")
     }
     
     @IBAction func datePickerValueChanged(_ sender: Any) {

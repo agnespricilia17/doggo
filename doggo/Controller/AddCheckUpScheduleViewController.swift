@@ -35,7 +35,13 @@ class AddCheckUpScheduleViewController: UIViewController {
     @objc func saveCheckUpSchedule() {
         // Saving to core data
         /* Write here*/
-        
+        let savedString1 = self.dateLabel.text
+        let userDefaults1 = Foundation.UserDefaults.standard
+        userDefaults1.set(savedString1, forKey: "Check Up Date")
+        let savedString2 = self.timeLabel.text
+        let userDefaults2 = Foundation.UserDefaults.standard
+        userDefaults2.set(savedString2, forKey: "Check Up Time")
+        print("save check up")
         /*dismiss(animated: true, completion: nil)*/
     }
     
