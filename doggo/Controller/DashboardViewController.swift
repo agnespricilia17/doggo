@@ -48,16 +48,17 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         
         let coreDataHelper = CoreDataHelper()
         dogs = coreDataHelper.fetch(entityName: "Dog")
-        for dog in dogs! {
-            print("Name  \(dog.name)")
-            print("Birth  \(dog.birthdate)")
-            print("Bre  \(dog.breed)")
-            print("Siz  \(dog.size)")
-            print("Gen  \(dog.gender)")
-            print("Pic  \(dog.picture)")
-        }
+//        for dog in dogs! {
+//            print("Name  \(dog.name)")
+//            print("Birth  \(dog.birthdate)")
+//            print("Bre  \(dog.breed)")
+//            print("Siz  \(dog.size)")
+//            print("Gen  \(dog.gender)")
+//            print("Pic  \(dog.picture)")
+//        }
+        
         // Setting up initial dog's name and breed
-        setDogName(name: "Fluffy Bun", breed: "Golden Retriever")
+        setDogName(name: dogs![0].name!, breed: dogs![0].breed!)
         
         // Setting up scroll view for dog lists
         dogScrollView.delegate = self
@@ -93,7 +94,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the text to be displayed in bubble here
         createBubbleShape(view: bubbleView)
-        produceBubbleMessage(text: "Feed me bitjh!")
+        produceBubbleMessage(text: "Hey Doggo")
         
         // Do any additional setup after loading the view.
         foodButton.layer.cornerRadius = foodButton.frame.height/4
@@ -140,20 +141,18 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
 ////////////////////////////////////////////////////////////////////
     
     func createSlides() -> [PhotoSlide] {
-        
-        let slide1:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
-        slide1.dogImage.image = UIImage(named: "golden retriever asset")
-        slide1.yellowBackground.layer.cornerRadius = slide1.yellowBackground.frame.width/2
-        
-        let slide2:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
-        slide2.dogImage.image = UIImage(named: "golden retriever asset")
-        slide2.yellowBackground.layer.cornerRadius = slide2.yellowBackground.frame.width/2
-        
-        let slide3:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
-        slide3.dogImage.image = UIImage(named: "golden retriever asset")
-        slide3.yellowBackground.layer.cornerRadius = slide3.yellowBackground.frame.width/2
-        
-        return [slide1, slide2, slide3]
+        var dogSlides:[PhotoSlide] = []
+        for dog in dogs! {
+            let slide:PhotoSlide = Bundle.main.loadNibNamed("PhotoSlide", owner: self, options: nil)?.first as! PhotoSlide
+            print("The PIC : \(dog.picture!)")
+            slide.dogImage.image = UIImage(named: dog.picture!)
+            slide.yellowBackground.layer.cornerRadius = slide.yellowBackground.frame.width/2
+            slide.dogName = dog.name
+            slide.dogBreed = dog.breed
+            dogSlides.append(slide)
+        }
+        print(dogSlides)
+        return dogSlides
     }
     
     func setupSlideScrollView(slides : [PhotoSlide]) {
@@ -174,17 +173,8 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         dogPageControl.currentPage = Int(pageIndex)
-        
-        // Check which dog is it on the show
-        if dogPageControl.currentPage == 0 {
-            setDogName(name: "Fluffy Puff", breed: "Golden Retriever")
-        }
-        else if dogPageControl.currentPage == 1 {
-            setDogName(name: "Fluffy Bun", breed: "Golden Retriever")
-        }
-        else if dogPageControl.currentPage == 2 {
-            setDogName(name: "Fluffy Pun", breed: "Golden Retriever")
-        }
+        let currentDog = slides[dogPageControl.currentPage]
+        setDogName(name: currentDog.dogName, breed: currentDog.dogBreed)
         
         let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
         let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
