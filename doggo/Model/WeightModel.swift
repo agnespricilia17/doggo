@@ -8,6 +8,7 @@
 
 import Foundation
 
-class GroomModel {
-    
+struct WeightModel {
+    var amount:Float
+    var date:Date
 }

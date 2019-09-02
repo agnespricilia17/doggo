@@ -8,6 +8,12 @@
 
 import Foundation
 
-class DogModel {
-    
+struct DogModel {
+    var name:String
+    var breedType:String
+    var breedSize:String
+    var birthDate:Date
+    var gender:String
+    var weight:Weight
+    var picture:String
 }

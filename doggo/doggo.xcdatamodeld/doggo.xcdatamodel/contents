@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CheckUp" representedClassName="CheckUp" syncable="YES" codeGenerationType="class">
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
-    </entity>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Dog" representedClassName="Dog" syncable="YES" codeGenerationType="class">
         <attribute name="birthdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="breed" optional="YES" attributeType="String" syncable="YES"/>
@@ -12,32 +8,15 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="toCheckup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckUp" syncable="YES"/>
-        <relationship name="toFood" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Food" syncable="YES"/>
-        <relationship name="toGroom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Groom" syncable="YES"/>
-        <relationship name="toTrain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Train" syncable="YES"/>
+        <relationship name="weight" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Weight" syncable="YES"/>
     </entity>
-    <entity name="Food" representedClassName="Food" syncable="YES" codeGenerationType="class">
+    <entity name="Weight" representedClassName="Weight" syncable="YES" codeGenerationType="class">
         <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-    </entity>
-    <entity name="Groom" representedClassName="Groom" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
     </entity>
-    <entity name="Train" representedClassName="Train" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
     <elements>
-        <element name="CheckUp" positionX="-18" positionY="63" width="128" height="75"/>
-        <element name="Dog" positionX="-63" positionY="-18" width="128" height="225"/>
-        <element name="Food" positionX="-54" positionY="36" width="128" height="105"/>
-        <element name="Groom" positionX="-36" positionY="54" width="128" height="75"/>
-        <element name="Train" positionX="0" positionY="99" width="128" height="90"/>
+        <element name="Dog" positionX="-338.3984375" positionY="-66.19921875" width="128" height="163"/>
+        <element name="Weight" positionX="-93.07421875" positionY="-14.36328125" width="128" height="88"/>
     </elements>
 </model>

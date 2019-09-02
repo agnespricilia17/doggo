@@ -51,7 +51,7 @@
 		E6F289C6230BD53000784315 /* GroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C5230BD53000784315 /* GroomViewController.swift */; };
 		E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C7230BD54D00784315 /* CheckUpViewController.swift */; };
 		E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CB230BDC9A00784315 /* DogModel.swift */; };
-		E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CD230BDCA700784315 /* GroomModel.swift */; };
+		E6F289CE230BDCA700784315 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CD230BDCA700784315 /* WeightModel.swift */; };
 		E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CF230BDCAF00784315 /* FoodModel.swift */; };
 		E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D1230BDCB700784315 /* CheckUpModel.swift */; };
 		E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D3230BDCC300784315 /* TrainModel.swift */; };
@@ -107,7 +107,7 @@
 		E6F289C5230BD53000784315 /* GroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomViewController.swift; sourceTree = "<group>"; };
 		E6F289C7230BD54D00784315 /* CheckUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpViewController.swift; sourceTree = "<group>"; };
 		E6F289CB230BDC9A00784315 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
-		E6F289CD230BDCA700784315 /* GroomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomModel.swift; sourceTree = "<group>"; };
+		E6F289CD230BDCA700784315 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
 		E6F289CF230BDCAF00784315 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		E6F289D1230BDCB700784315 /* CheckUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpModel.swift; sourceTree = "<group>"; };
 		E6F289D3230BDCC300784315 /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F289CB230BDC9A00784315 /* DogModel.swift */,
-				E6F289CD230BDCA700784315 /* GroomModel.swift */,
+				E6F289CD230BDCA700784315 /* WeightModel.swift */,
 				E6F289CF230BDCAF00784315 /* FoodModel.swift */,
 				E6F289D1230BDCB700784315 /* CheckUpModel.swift */,
 				E6F289D3230BDCC300784315 /* TrainModel.swift */,
@@ -321,7 +321,7 @@
 				C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */,
 				9211A279231389E500614EED /* UIBezierPathExtension.swift in Sources */,
 				9211A27F23138A0F00614EED /* ChartView.swift in Sources */,
-				E6F289CE230BDCA700784315 /* GroomModel.swift in Sources */,
+				E6F289CE230BDCA700784315 /* WeightModel.swift in Sources */,
 				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
 				E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */,
 				E6F289BC230BD41000784315 /* RegisterViewController.swift in Sources */,
@@ -500,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 799HWA5Y74;
+				DEVELOPMENT_TEAM = WPQ9HAVPNV;
 				INFOPLIST_FILE = doggo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 799HWA5Y74;
+				DEVELOPMENT_TEAM = WPQ9HAVPNV;
 				INFOPLIST_FILE = doggo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -35,7 +35,7 @@ class CoreDataHelper {
     }
 
           // TODO: Need to finish creating entity
-    func save<T>(model: T, entityName: String) {
+    func save(model: DogModel) {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
             else {
@@ -44,8 +44,21 @@ class CoreDataHelper {
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let dogDatas:[T] = fetch(entityName: entityName)
         let dog = Dog(context: managedContext)
+        
+        let dogWeight = Weight(context: managedContext)
+        
+        dog.name = model.name
+        dog.birthdate = model.birthDate
+        dog.breed = model.breedType
+        dog.size = model.breedSize
+        dog.gender = model.gender
+        
+        dogWeight.amount = model.weight.amount
+        dogWeight.date = model.weight.date
+        dog.addToWeight(dogWeight)
+        
+        dog.picture = model.picture
         
         do {
             try managedContext.save()
@@ -53,6 +66,45 @@ class CoreDataHelper {
         }
         catch {
             print("Error : Saving data")
+        }
+    }
+    
+    
+    func update(entityName : String, searchString: String, updatedWeight: Weight) {
+        let result:[Dog] = fetch(entityName: entityName)
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            else {
+                return print("Error : Could not get AppDelegate file!")
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let dogWeight = Weight(context: managedContext)
+        
+        dogWeight.amount = updatedWeight.amount
+        dogWeight.date = updatedWeight.date
+        
+        var isDataFound = false
+        for data in result {
+            if data.name == searchString {
+                let dog = data as Dog
+                dog.addToWeight(dogWeight)
+                isDataFound = true
+                break
+            }
+        }
+        if !isDataFound {
+            print("Dog not found")
+        }
+        else {
+            do {
+                try managedContext.save()
+                print("Success saving data")
+            }
+            catch {
+                print("Error : Saving data")
+            }
         }
     }
 }
