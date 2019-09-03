@@ -41,6 +41,7 @@
 		E69E84FB23152301008D3037 /* Weight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84FA23152301008D3037 /* Weight.storyboard */; };
 		E69E84FD23152315008D3037 /* Groom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84FC23152315008D3037 /* Groom.storyboard */; };
 		E69E84FF23152333008D3037 /* VetCheck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69E84FE23152333008D3037 /* VetCheck.storyboard */; };
+		E6E74D86231E635D008D2829 /* Jaapokki-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E6E74D85231E635D008D2829 /* Jaapokki-Regular.otf */; };
 		E6F2899C230B878600784315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2899B230B878600784315 /* AppDelegate.swift */; };
 		E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6F289A2230B878600784315 /* doggo.xcdatamodeld */; };
 		E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B5230BD3DE00784315 /* DashboardViewController.swift */; };
@@ -98,6 +99,7 @@
 		E69E84FA23152301008D3037 /* Weight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Weight.storyboard; sourceTree = "<group>"; };
 		E69E84FC23152315008D3037 /* Groom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Groom.storyboard; sourceTree = "<group>"; };
 		E69E84FE23152333008D3037 /* VetCheck.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VetCheck.storyboard; sourceTree = "<group>"; };
+		E6E74D85231E635D008D2829 /* Jaapokki-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jaapokki-Regular.otf"; path = "../../../../../Downloads/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf"; sourceTree = "<group>"; };
 		E6F28998230B878600784315 /* doggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2899B230B878600784315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6F289A3230B878600784315 /* doggo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doggo.xcdatamodel; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6E74D84231E633B008D2829 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E6E74D85231E635D008D2829 /* Jaapokki-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		E6F2898F230B878600784315 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		E6F2899A230B878600784315 /* doggo */ = {
 			isa = PBXGroup;
 			children = (
+				E6E74D84231E633B008D2829 /* Font */,
 				E6F289B4230BCF8300784315 /* Storyboard */,
 				E6F289B3230BCF7600784315 /* Helper */,
 				E6F289B2230BCF6100784315 /* Controller */,
@@ -307,6 +318,7 @@
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
 				8AFFC0A6231E0DDA004E84A7 /* TabBar.storyboard in Resources */,
 				E69E84FF23152333008D3037 /* VetCheck.storyboard in Resources */,
+				E6E74D86231E635D008D2829 /* Jaapokki-Regular.otf in Resources */,
 				E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */,
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
 				9211A1FC230EFCA800614EED /* Health.storyboard in Resources */,

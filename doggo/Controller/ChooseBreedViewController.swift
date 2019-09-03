@@ -22,60 +22,70 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
         slide1.breedView.image = UIImage(named: "Beagle")
         slide1.breedName.text = "Beagle"
         slide1.breedDesc.text = "Gentle and outgoing, great for any family.  Easygoing dog that perfect for companion. Small dog category. Loyal and tenacious character."
+        slide1.breedDesc.sizeToFit()
         slide1.breedSize = "Small"
         
         let slide2:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide2.breedView.image = UIImage(named: "Border Collie")
         slide2.breedName.text = "Border Collie"
         slide2.breedDesc.text = "A medium dog category. Known for his intense stare which control his flock. Unlimited energy, stamina and working drive. Highly trainable and intelligent."
+        slide2.breedDesc.sizeToFit()
         slide2.breedSize = "Medium"
         
         let slide3:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide3.breedView.image = UIImage(named: "Dachshund")
         slide3.breedName.text = "Dachshund"
-        slide3.breedDesc.text = "The dachsund, small dog category known as  “Wiener dog” or “Sausage dog”. Loveable little dog, charming with their spunk. Retain low body and cleverness required."
+        slide3.breedDesc.text = "The dachshund, small dog category known as  “Wiener dog” or “Sausage dog”. Loveable little dog, charming with their spunk. Retain low body and cleverness required."
+        slide3.breedDesc.sizeToFit()
         slide3.breedSize = "Small"
         
         let slide4:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide4.breedView.image = UIImage(named: "German Shepherd")
         slide4.breedName.text = "German Shepherd"
         slide4.breedDesc.text = "They are intelligent and capable working dogs. They are amazingly versatile, excelling at most they are trained. Usually help at police and military service, herding, search, rescue and drug detection."
+        slide4.breedDesc.sizeToFit()
         slide4.breedSize = "Medium"
         
         let slide5:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide5.breedView.image = UIImage(named: "Golden Retriever")
         slide5.breedName.text = "Golden Retriever"
         slide5.breedDesc.text = "A very loyal family dog. Medium dog category. Suitable for intermediate to expert. Cold climate and regular brushing required."
+        slide5.breedDesc.sizeToFit()
         slide5.breedSize = "Medium"
         
         let slide6:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide6.breedView.image = UIImage(named: "Great Dane")
         slide6.breedName.text = "Great Dane"
         slide6.breedDesc.text = "A loveable giant, know for having a heart of gold. These fun fogs, offering a good combination of overall calm and jovialty. This dog quite handful for families."
+        slide6.breedDesc.sizeToFit()
         slide6.breedSize = "Large"
         
         let slide7:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide7.breedView.image = UIImage(named: "Maltese")
         slide7.breedName.text = "Maltese"
         slide7.breedDesc.text = "Maltese, a toy category is known as a playful and affectionate. Their long and straight fur is daunting to many owners who fear grooming responsibilities. They are low-shedding and long lived."
+        slide7.breedDesc.sizeToFit()
         slide7.breedSize = "Toy"
         
         let slide8:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide8.breedView.image = UIImage(named: "Pomeranian")
         slide8.breedName.text = "Pomeranian"
         slide8.breedDesc.text = "Huge fluffy coat to match its larger-than life personality, make Pomeranian is one of the most popular small dog breeds. Goofy and alert personality. "
+        slide8.breedDesc.sizeToFit()
         slide8.breedSize = "Toy"
         
         let slide9:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide9.breedView.image = UIImage(named: "Pug")
         slide9.breedName.text = "Pug"
         slide9.breedDesc.text = "The Pug is timeless staple, beloved by many owners and admires. Pugs are some of the sturdier toy dogs. Their ridiculously cute appearance and outgoing personality make them fabulous pets."
+        slide9.breedDesc.sizeToFit()
         slide9.breedSize = "Toy"
         
         let slide10:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide10.breedView.image = UIImage(named: "St. Bernard")
         slide10.breedName.text = "St. Bernard"
         slide10.breedDesc.text = "Dog breed that used as a guard dog. This dog help find and save lost and injured people. This breed versatile and excels show ring and in obedience trials and weight pulling competition."
+        slide10.breedDesc.sizeToFit()
         slide10.breedSize = "Large"
         
         return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10]
