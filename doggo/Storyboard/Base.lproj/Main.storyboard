@@ -200,31 +200,12 @@
                         <outlet property="registerDone" destination="XtZ-SQ-NQe" id="3eD-2K-inW"/>
                         <outlet property="weightField" destination="bgL-OF-aMD" id="YAr-4g-lvR"/>
                         <outlet property="yellowCircle" destination="UmZ-Z6-rTw" id="S0D-Zz-RKU"/>
-                        <segue destination="HYM-dN-YIe" kind="showDetail" identifier="goToDashboard" id="rRH-lN-CSD"/>
+                        <segue destination="CJ1-9k-LXo" kind="showDetail" identifier="goToDashboard" id="rRH-lN-CSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Uu-Oj-wae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134.78260869565219" y="2002.9017857142856"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Pln-vK-gOM">
-            <objects>
-                <tabBarController id="HYM-dN-YIe" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UPF-5t-0dv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="mqv-CK-UFt" kind="relationship" relationship="viewControllers" id="hzT-bZ-Yec"/>
-                        <segue destination="hJM-GS-Wge" kind="relationship" relationship="viewControllers" id="JRb-tL-8Jz"/>
-                        <segue destination="9mj-ZD-7Er" kind="relationship" relationship="viewControllers" id="WCt-Eu-FIt"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EWR-nf-iRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="965" y="2002"/>
         </scene>
         <!--Add New Dog Controller-->
         <scene sceneID="Wa9-nw-2J6">
@@ -241,41 +222,17 @@
             </objects>
             <point key="canvasLocation" x="135" y="1253"/>
         </scene>
-        <!--Health-->
-        <scene sceneID="uwe-NC-rNQ">
+        <!--Main-->
+        <scene sceneID="dgH-yM-L3G">
             <objects>
-                <viewControllerPlaceholder storyboardName="Health" id="hJM-GS-Wge" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="asd" image="favorite-heart-button" id="0hT-bB-uC1"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bYs-Uc-Ch6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="TabBar" referencedIdentifier="Main" id="CJ1-9k-LXo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAL-P9-2G0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="2003"/>
-        </scene>
-        <!--Train-->
-        <scene sceneID="1oW-lX-ao0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Train" id="9mj-ZD-7Er" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VXJ-er-FBB"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JOd-19-A8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2286" y="2458"/>
-        </scene>
-        <!--Dashboard-->
-        <scene sceneID="5bs-Vc-3Z7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Dashboard" id="mqv-CK-UFt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ASD" image="tab" id="sIM-qB-kNq"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6V5-Si-QMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2201" y="1686"/>
+            <point key="canvasLocation" x="965" y="2002"/>
         </scene>
     </scenes>
     <resources>
-        <image name="favorite-heart-button" width="13.5" height="12.5"/>
         <image name="male gender" width="298" height="298"/>
-        <image name="tab" width="25" height="25"/>
         <image name="women gender" width="222" height="330"/>
     </resources>
 </document>

@@ -18,6 +18,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let launchedBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let launchStoryBoard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let mainStoryBoard = UIStoryboard(name: "TabBar", bundle: nil)
+
+        var vc: UIViewController
+        if launchedBefore{
+            vc = mainStoryBoard.instantiateInitialViewController()!
+            
+//            let tabbarVC = mainStoryBoard.instantiateViewController(withIdentifier: "Dashboard") as! UITabBarController
+//            if let vcs = tabbarVC.viewControllers,
+//                let nc = vcs.first as? UINavigationController,
+//                let pendingOverVC = nc.topViewController as?  {
+//
+//                pendingOverVC.pendingResult = pendingResult
+//            }
+            
+//            let initialViewController = mainStoryBoard.instantiateViewController(withIdentifier: "Dashboard") as! UITabBarController
+//            let navigationController = UITabBarController()
+//            self.window?.rootViewController = navigationController
+//            vc = initialViewController
+        }else{
+            vc = launchStoryBoard.instantiateViewController(withIdentifier: "Onboarding")
+        }
+        
+        UserDefaults.standard.set(true, forKey: "hasLaunched")
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+        
         notificationCenter.delegate = self
         
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]

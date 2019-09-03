@@ -42,6 +42,7 @@ class WeightViewController: UIViewController {
             if dateFormat.string(from: dogWeight.date!) == dateFormat.string(from: Date()) {
                 currentWeightLabel.text = String(dogWeight.amount)
                 currentWeight = Int(dogWeight.amount)
+                weightSlider.value = Float(currentWeight)
             }
             dataEntries.append(DogChartData(color: UIColor.red, height: Float.random(in: 0.1...1), textValue: String(dogWeight.amount), title: dateFormat.string(from: dogWeight.date!)))
         }
@@ -52,11 +53,72 @@ class WeightViewController: UIViewController {
         dataEntries.removeAll()
         updateTable()
         chart!.updateDataEntries(dataEntries: dataEntries, animated: true)
+        if weightSlider.value < 34{
+            infoString = "Your dog needs to gain more weight!"
+            myMutableString = NSMutableAttributedString(string: infoString)
+            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: NSRange(location:18,length:17))
+            dogWeightInfoLabel.attributedText = myMutableString
+            dogWeightInfoLabel.text = infoString
+            //            weightSlider.thumbTintColor = UIColor(displayP3Red: CGFloat(weightSlider.value / 100), green: CGFloat(weightSlider.value / 100), blue: 1, alpha: 1)
+        }else if weightSlider.value > 66{
+            infoString = "Your dog needs to lose some weight!"
+            myMutableString = NSMutableAttributedString(string: infoString)
+            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:17))
+            dogWeightInfoLabel.attributedText = myMutableString
+            dogWeightInfoLabel.text = infoString
+            //            weightSlider.thumbTintColor = UIColor(displayP3Red: 1, green: CGFloat(weightSlider.value / 100), blue: CGFloat(weightSlider.value / 100), alpha: 1)
+        }else{
+            infoString = "Your dog's weight is ideal"
+            myMutableString = NSMutableAttributedString(string: infoString)
+            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.green, range: NSRange(location:21,length:5))
+            dogWeightInfoLabel.attributedText = myMutableString
+            dogWeightInfoLabel.text = infoString
+            //            weightSlider.thumbTintColor = UIColor(displayP3Red: CGFloat(weightSlider.value / 100), green: 1, blue: CGFloat(weightSlider.value / 100), alpha: 1)
+        }
+        
+        if dogBreedLabel.text == "Beagle"{
+            weightSlider.minimumValue = 9
+            weightSlider.maximumValue = 13.6
+            
+        }else if dogBreedLabel.text == "Border Collie"{
+            weightSlider.minimumValue = 13.6
+            weightSlider.maximumValue = 25
+        }else if dogBreedLabel.text == "Dachshund"{
+            weightSlider.minimumValue = 7.2
+            weightSlider.maximumValue = 14.5
+        }else if dogBreedLabel.text == "German Shepherd"{
+            weightSlider.minimumValue = 29.4
+            weightSlider.maximumValue = 34
+        }else if dogBreedLabel.text == "Golden Retriever"{
+            weightSlider.minimumValue = 29.4
+            weightSlider.maximumValue = 34
+        }else if dogBreedLabel.text == "Great Dane"{
+            weightSlider.minimumValue = 63.5
+            weightSlider.maximumValue = 79.4
+        }else if dogBreedLabel.text == "Maltese"{
+            weightSlider.minimumValue = 2
+            weightSlider.maximumValue = 3.5
+        }else if dogBreedLabel.text == "Pomeranian"{
+            weightSlider.minimumValue = 1.3
+            weightSlider.maximumValue = 3.2
+        }else if dogBreedLabel.text == "Pug"{
+            weightSlider.minimumValue = 6.3
+            weightSlider.maximumValue = 8.1
+        }else if dogBreedLabel.text == "St. Bernard"{
+            weightSlider.minimumValue = 63
+            weightSlider.maximumValue = 81.5
+        }
+        underweightAmountLabel.text = "\(weightSlider.minimumValue)"
+        overweightAmountLabel.text = "\(weightSlider.maximumValue)"
+        idealAmountLabel.text = "\(weightSlider.minimumValue + (weightSlider.maximumValue - weightSlider.minimumValue)/2)"
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Weight"
+        
+        
         
         dogNameLabel.text = dogs[currentDog].name
         dogBreedLabel.text = dogs[currentDog].breed
@@ -80,28 +142,6 @@ class WeightViewController: UIViewController {
         print(formattedDate)
         todayDateLabel.text = formattedDate
         
-        if weightSlider.value < 34{
-            infoString = "Your dog needs to gain more weight!"
-            myMutableString = NSMutableAttributedString(string: infoString)
-            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:17))
-            dogWeightInfoLabel.attributedText = myMutableString
-            dogWeightInfoLabel.text = infoString
-            //            weightSlider.thumbTintColor = UIColor(displayP3Red: CGFloat(weightSlider.value / 100), green: CGFloat(weightSlider.value / 100), blue: 1, alpha: 1)
-        }else if weightSlider.value > 66{
-            infoString = "Your dog needs to lose some weight!"
-            myMutableString = NSMutableAttributedString(string: infoString)
-            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:17))
-            dogWeightInfoLabel.attributedText = myMutableString
-            dogWeightInfoLabel.text = infoString
-            //            weightSlider.thumbTintColor = UIColor(displayP3Red: 1, green: CGFloat(weightSlider.value / 100), blue: CGFloat(weightSlider.value / 100), alpha: 1)
-        }else{
-            infoString = "Your dog's weight is ideal"
-            myMutableString = NSMutableAttributedString(string: infoString)
-            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.green, range: NSRange(location:21,length:5))
-            dogWeightInfoLabel.attributedText = myMutableString
-            dogWeightInfoLabel.text = infoString
-            //            weightSlider.thumbTintColor = UIColor(displayP3Red: CGFloat(weightSlider.value / 100), green: 1, blue: CGFloat(weightSlider.value / 100), alpha: 1)
-        }
         //weightSlider thumb custom image
         for state: UIControl.State in [.normal, .selected, .application, .reserved] {
             

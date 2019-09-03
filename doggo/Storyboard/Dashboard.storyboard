@@ -21,7 +21,7 @@
         <!--Dashboard-->
         <scene sceneID="UJB-7R-NBv">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="InI-aR-eon" userLabel="Dashboard" customClass="DashboardViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" autoresizesArchivedViewToFullSize="NO" title="Main" automaticallyAdjustsScrollViewInsets="NO" id="InI-aR-eon" userLabel="Dashboard" customClass="DashboardViewController" customModule="doggo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y04-37-16k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZd-LU-q8i">
-                                <rect key="frame" x="298" y="636" width="76" height="27"/>
+                                <rect key="frame" x="133" y="636" width="241" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
@@ -135,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-sW-M4O">
-                                <rect key="frame" x="298" y="731" width="76" height="27"/>
+                                <rect key="frame" x="133" y="731" width="241" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>

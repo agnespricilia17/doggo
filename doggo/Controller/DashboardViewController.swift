@@ -41,8 +41,9 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var checkUpIcon: UIImageView!
     @IBOutlet weak var checkUpIconLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
         let coreDataHelper = CoreDataHelper()
         dogs = coreDataHelper.fetch(entityName: "Dog")
@@ -89,10 +90,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         view.bringSubviewToFront(checkUpIcon)
         view.bringSubviewToFront(checkUpIconLabel)
 
-//        kalo udah ada data dog, initial view controller dari sini.
-        if dogs.count > 0{
-            
-        }
+
         
         // Set the text to be displayed in bubble here
         createBubbleShape(view: bubbleView)
@@ -120,32 +118,41 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         if valueFoodSchedule1 != ""{
             foodScheduleSecondaryLabel.text = "\(valueFoodSchedule1), \(valueFoodSchedule2), \(valueFoodSchedule3), \(valueFoodSchedule4)"
         }else{
-            foodScheduleSecondaryLabel.text = "Please insert feeding time"
+            foodScheduleSecondaryLabel.text = "00:00, 00:00, 00:00"
+            foodScheduleMainLabel.text = "00:00"
         }
+        
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "dd/MM/yyyy"
+        let formattedDate = format.string(from: date)
+        
         let userGroomDateSchedule = Foundation.UserDefaults.standard
         let valueGroomDateSchedule = userGroomDateSchedule.string(forKey: "Groom Date") ?? ""
         let userGroomTimeSchedule = Foundation.UserDefaults.standard
         let valueGroomTimeSchedule = userGroomTimeSchedule.string(forKey: "Groom Time") ?? ""
         if valueGroomTimeSchedule != ""{
-            groomingScheduleSecondaryLabel.text = "\(valueGroomDateSchedule) | \(valueGroomTimeSchedule)"
+            groomingScheduleSecondaryLabel.text = "\(valueGroomTimeSchedule)"
+            groomingScheduleMainLabel.text = "\(valueGroomDateSchedule)"
         }else{
-            groomingScheduleSecondaryLabel.text = "Please insert grooming schedule"
+            groomingScheduleSecondaryLabel.text = "00:00"
+            groomingScheduleMainLabel.text = formattedDate
         }
         
         let userCheckUpDateSchedule = Foundation.UserDefaults.standard
         let valueCheckUpDateSchedule = userCheckUpDateSchedule.string(forKey: "Check Up Date") ?? ""
         let userCheckUpTimeSchedule = Foundation.UserDefaults.standard
         let valueCheckUpTimeSchedule = userCheckUpTimeSchedule.string(forKey: "Check Up Time") ?? ""
-        if valueGroomTimeSchedule != ""{
-            checkUpSecondaryLabel.text = "\(valueCheckUpDateSchedule) | \(valueCheckUpTimeSchedule)"
+        if valueCheckUpTimeSchedule != ""{
+            checkUpSecondaryLabel.text = "\(valueCheckUpTimeSchedule)"
+            checkUpMainLabel.text = "\(valueCheckUpDateSchedule)"
         }else{
-            checkUpSecondaryLabel.text = "Please insert check up schedule"
+            checkUpSecondaryLabel.text = "00:00"
+            checkUpMainLabel.text = formattedDate
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+    
     
     func setDogName(name: String, breed: String) {
         dogName.text = name

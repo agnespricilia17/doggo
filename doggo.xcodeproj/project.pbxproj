@@ -14,6 +14,7 @@
 		1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACEC062314E4FC00D88164 /* PhotoSlide.xib */; };
 		8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
 		8AFFC0A3231CC330004E84A7 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */; };
+		8AFFC0A6231E0DDA004E84A7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFFC0A4231E0DDA004E84A7 /* TabBar.storyboard */; };
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
@@ -70,6 +71,7 @@
 		1EACEC062314E4FC00D88164 /* PhotoSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSlide.xib; sourceTree = "<group>"; };
 		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
+		8AFFC0A5231E0DDA004E84A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				9211A213230F034C00614EED /* Dashboard.storyboard */,
 				9211A1FF230F002700614EED /* LaunchScreen.storyboard */,
+				8AFFC0A4231E0DDA004E84A7 /* TabBar.storyboard */,
 				9211A208230F010400614EED /* Train.storyboard */,
 				9211A201230F002700614EED /* Main.storyboard */,
 				9211A1FB230EFCA800614EED /* Health.storyboard */,
@@ -302,6 +305,7 @@
 				E69E84FD23152315008D3037 /* Groom.storyboard in Resources */,
 				9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */,
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
+				8AFFC0A6231E0DDA004E84A7 /* TabBar.storyboard in Resources */,
 				E69E84FF23152333008D3037 /* VetCheck.storyboard in Resources */,
 				E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */,
 				9211A214230F034C00614EED /* Dashboard.storyboard in Resources */,
@@ -368,6 +372,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8AFFC0A4231E0DDA004E84A7 /* TabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFFC0A5231E0DDA004E84A7 /* Base */,
+			);
+			name = TabBar.storyboard;
+			sourceTree = "<group>";
+		};
 		9211A1FF230F002700614EED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
