@@ -96,13 +96,13 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
 
         
         // Set the text to be displayed in bubble here
-        createBubbleShape(view: bubbleView)
-        produceBubbleMessage(text: "Hey Doggo")
+        //createBubbleShape(view: bubbleView)
+        //produceBubbleMessage(text: "Hey Doggo")
         
         // Do any additional setup after loading the view.
-        foodButton.layer.cornerRadius = foodButton.frame.height/4
-        groomingButton.layer.cornerRadius = groomingButton.frame.height/4
-        checkUpButton.layer.cornerRadius = checkUpButton.frame.height/4
+        foodButton.layer.cornerRadius = 10
+        groomingButton.layer.cornerRadius = 10
+        checkUpButton.layer.cornerRadius = 10
         
         // Set up navigation bar item for adding new dog
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewDogButton))
@@ -119,7 +119,8 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         let userFoodSchedule4 = Foundation.UserDefaults.standard
         let valueFoodSchedule4 = userFoodSchedule4.string(forKey: "Food 4") ?? ""
         if valueFoodSchedule1 != ""{
-            foodScheduleSecondaryLabel.text = "\(valueFoodSchedule1), \(valueFoodSchedule2), \(valueFoodSchedule3), \(valueFoodSchedule4)"
+            foodScheduleSecondaryLabel.text = " \(valueFoodSchedule2), \(valueFoodSchedule3), \(valueFoodSchedule4)"
+            foodScheduleMainLabel.text = "\(valueFoodSchedule1)"
         }else{
             foodScheduleSecondaryLabel.text = "00:00, 00:00, 00:00"
             foodScheduleMainLabel.text = "00:00"

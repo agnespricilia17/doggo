@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-cW-cLU">
-                    <rect key="frame" x="99" y="222" width="216" height="204"/>
+                    <rect key="frame" x="99" y="216" width="216" height="216"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.82745098039999998" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
