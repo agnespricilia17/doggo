@@ -9,11 +9,15 @@
 import UIKit
 
 class HealthViewController: UIViewController {
-
+    @IBOutlet weak var groomButton: UIButton!
+    @IBOutlet weak var vetCheckButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        groomButton.layer.cornerRadius = 10
+        vetCheckButton.layer.cornerRadius = 10
     }
     
 
