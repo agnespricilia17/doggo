@@ -10,6 +10,10 @@ import UIKit
 
 class FoodViewController: UIViewController {
 
+    @IBOutlet weak var currentLineView: UIView!
+    @IBOutlet weak var idealLineView: UIView!
+    @IBOutlet weak var currentLabel: UILabel!
+    @IBOutlet weak var idealLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var weightNumberLabel: UILabel!
     @IBOutlet weak var kgLabel: UILabel!
@@ -43,7 +47,7 @@ class FoodViewController: UIViewController {
         dogWeights = dogs[currentDog].weightOfDog?.allObjects as! [Weight]
         
         dogName.text = dogs[currentDog].name
-        dogBreed.text = dogs[currentDog].breed
+        dogBreed.text = "\(dogs[currentDog].breed ?? "") - Daily Feeding"
         
 //        weightNumberLabel.text = "\(dogWeights)"
         
@@ -183,6 +187,8 @@ class FoodViewController: UIViewController {
             self.kgLabel.frame.origin.y += CGFloat(self.yChange)
             self.weightIndicatorLabel.frame.origin.y += CGFloat(self.yChange)
             self.indicatorToTheRightImageView.frame.origin.y += CGFloat(self.yChange)
+            self.currentLabel.frame.origin.y += CGFloat(self.yChange)
+            self.idealLineView.frame.origin.y += CGFloat(self.yChange)
             
             self.indicatorToTheLeftImageView.frame.origin.y -= CGFloat(self.yChange)
             self.cupNumberLabel.frame.origin.y -= CGFloat(self.yChange)
@@ -191,6 +197,8 @@ class FoodViewController: UIViewController {
             self.gramNumberLabel.frame.origin.y -= CGFloat(self.yChange)
             self.gramLabel.frame.origin.y -= CGFloat(self.yChange)
             self.kcalAmountLabel.frame.origin.y -= CGFloat(self.yChange)
+            self.idealLabel.frame.origin.y -= CGFloat(self.yChange)
+            self.currentLineView.frame.origin.y -= CGFloat(self.yChange)
         }, completion: nil)
 
         
