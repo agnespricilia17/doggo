@@ -43,7 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             vc = launchStoryBoard.instantiateViewController(withIdentifier: "Onboarding")
         }
         
-        UserDefaults.standard.set(true, forKey: "hasLaunched")
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         

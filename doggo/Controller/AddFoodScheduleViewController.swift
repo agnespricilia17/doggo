@@ -62,6 +62,17 @@ class AddFoodScheduleViewController: UIViewController {
         
         /*dismiss(animated: true, completion: nil)*/
         print("save tapped")
+        
+        let alert = UIAlertController(title: "Saved", message: "Data successfully saved.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok"
+            , style: .default
+            , handler: { (UIAlertAction) in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(alert, animated: true)
+        
     }
     
     @IBAction func datePickerValueChanged(_ sender: Any) {

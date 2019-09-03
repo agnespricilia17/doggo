@@ -44,6 +44,16 @@ class AddGroomingScheduleViewController: UIViewController {
         userDefaults2.set(savedString2, forKey: "Groom Time")
         print("save groom")
         /*dismiss(animated: true, completion: nil)*/
+        let alert = UIAlertController(title: "Saved", message: "Data successfully saved.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok"
+            , style: .default
+            , handler: { (UIAlertAction) in
+                self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(alert, animated: true)
+        
     }
     
     @IBAction func dateValueChanged(_ sender: Any) {

@@ -45,6 +45,9 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        
+        UserDefaults.standard.set(true, forKey: "hasLaunched")
+        
         let coreDataHelper = CoreDataHelper()
         dogs = coreDataHelper.fetch(entityName: "Dog")
 //        for dog in dogs! {
