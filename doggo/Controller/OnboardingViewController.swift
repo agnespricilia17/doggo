@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OnBoardingViewController: UIViewController,UIScrollViewDelegate{
+class OnboardingViewController: UIViewController,UIScrollViewDelegate{
 
     @IBOutlet weak var scrollView: UIScrollView!
   
@@ -23,20 +23,20 @@ class OnBoardingViewController: UIViewController,UIScrollViewDelegate{
         
         let slide1:Slide = Bundle.main.loadNibNamed("SlideView", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "on boarding 1")
-        slide1.titleLabel.text = "Take care of your dog."
+        slide1.titleLabel.text = "Take care of your dog"
         slide1.descLabel.text = "Check your dog's daily needs."
         slide1.btnStart.isHidden = true
         
         let slide2:Slide = Bundle.main.loadNibNamed("SlideView", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "on boarding 2")
-        slide2.titleLabel.text = "Get notification."
+        slide2.titleLabel.text = "Get notification"
         slide2.descLabel.text = "Never again will you forget to take care of your dog."
         slide2.btnStart.isHidden = true
         
         let slide3:Slide = Bundle.main.loadNibNamed("SlideView", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "on boarding 3")
-        slide3.titleLabel.text = "Keep track of your actions."
-        slide3.descLabel.text = "Confirm your action buy checking to-do list."
+        slide3.titleLabel.text = "Keep track of your actions"
+        slide3.descLabel.text = "Confirm your action by checking through the to-do list."
         slide3.btnStart.isEnabled = true
         
         return [slide1, slide2, slide3]

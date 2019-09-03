@@ -31,7 +31,7 @@
 		9211A28123138A2900614EED /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A28023138A2900614EED /* ChartPresenter.swift */; };
 		9211A28323138A3B00614EED /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A28223138A3B00614EED /* ChartData.swift */; };
 		9211A289231CFEB400614EED /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A288231CFEB400614EED /* GlobalVariable.swift */; };
-		C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */; };
+		C524EFC2230CFD6900EAE665 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC1230CFD6900EAE665 /* OnboardingViewController.swift */; };
 		C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524EFC3230CFD8E00EAE665 /* Slide.swift */; };
 		E69E84EB2313CABC008D3037 /* breedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E84EA2313CABC008D3037 /* breedSlide.swift */; };
 		E69E84ED2313CAED008D3037 /* breedSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69E84EC2313CAED008D3037 /* breedSlideView.xib */; };
@@ -87,7 +87,7 @@
 		9211A28023138A2900614EED /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		9211A28223138A3B00614EED /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		9211A288231CFEB400614EED /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
-		C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		C524EFC1230CFD6900EAE665 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C524EFC3230CFD8E00EAE665 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		C524EFC5230CFD9B00EAE665 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
 		E69E84EA2313CABC008D3037 /* breedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breedSlide.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 				E6F289C3230BD52700784315 /* WeightViewController.swift */,
 				E6F289C5230BD53000784315 /* GroomViewController.swift */,
 				E6F289C7230BD54D00784315 /* CheckUpViewController.swift */,
-				C524EFC1230CFD6900EAE665 /* OnBoardingViewController.swift */,
+				C524EFC1230CFD6900EAE665 /* OnboardingViewController.swift */,
 				E69E84EA2313CABC008D3037 /* breedSlide.swift */,
 				C524EFC3230CFD8E00EAE665 /* Slide.swift */,
 				E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */,
@@ -362,7 +362,7 @@
 				1E2C0AC8231525D30034801A /* AddCheckUpScheduleViewController.swift in Sources */,
 				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
 				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
-				C524EFC2230CFD6900EAE665 /* OnBoardingViewController.swift in Sources */,
+				C524EFC2230CFD6900EAE665 /* OnboardingViewController.swift in Sources */,
 				1E2C0AC6231525C80034801A /* AddGroomingScheduleViewController.swift in Sources */,
 				1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */,
 				8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */,
