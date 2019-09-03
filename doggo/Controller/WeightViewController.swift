@@ -38,13 +38,14 @@ class WeightViewController: UIViewController {
     func updateTable() {
         for dogWeight in dogWeights {
             let dateFormat = DateFormatter()
-            dateFormat.dateFormat = "dd/MM/yyyy"
+            dateFormat.dateFormat = "dd/MM/yy"
             if dateFormat.string(from: dogWeight.date!) == dateFormat.string(from: Date()) {
-                currentWeightLabel.text = String(dogWeight.amount)
+                currentWeightLabel.text = "\(dogWeight.amount) kg"
                 currentWeight = Int(dogWeight.amount)
                 weightSlider.value = Float(currentWeight)
             }
-            dataEntries.append(DogChartData(color: UIColor.red, height: Float.random(in: 0.1...1), textValue: String(dogWeight.amount), title: dateFormat.string(from: dogWeight.date!)))
+            let textValue = String(dogWeight.amount) + " kg"
+            dataEntries.append(DogChartData(color: #colorLiteral(red: 0.6089892387, green: 0.7804667354, blue: 0.8928080201, alpha: 1), height: Float.random(in: 0.1...1), textValue: textValue, title: dateFormat.string(from: dogWeight.date!)))
         }
     }
     
@@ -56,21 +57,21 @@ class WeightViewController: UIViewController {
         if weightSlider.value < 34{
             infoString = "Your dog needs to gain more weight!"
             myMutableString = NSMutableAttributedString(string: infoString)
-            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: NSRange(location:18,length:17))
+            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.init(cgColor: #colorLiteral(red: 0.3921568627, green: 0.7450980392, blue: 1, alpha: 1)), range: NSRange(location:18,length:17))
             dogWeightInfoLabel.attributedText = myMutableString
             dogWeightInfoLabel.text = infoString
             //            weightSlider.thumbTintColor = UIColor(displayP3Red: CGFloat(weightSlider.value / 100), green: CGFloat(weightSlider.value / 100), blue: 1, alpha: 1)
         }else if weightSlider.value > 66{
             infoString = "Your dog needs to lose some weight!"
             myMutableString = NSMutableAttributedString(string: infoString)
-            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:17))
+            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.init(cgColor: #colorLiteral(red: 0.9921568627, green: 0.4078431373, blue: 0.4078431373, alpha: 1)), range: NSRange(location:18,length:17))
             dogWeightInfoLabel.attributedText = myMutableString
             dogWeightInfoLabel.text = infoString
             //            weightSlider.thumbTintColor = UIColor(displayP3Red: 1, green: CGFloat(weightSlider.value / 100), blue: CGFloat(weightSlider.value / 100), alpha: 1)
         }else{
             infoString = "Your dog's weight is ideal"
             myMutableString = NSMutableAttributedString(string: infoString)
-            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.green, range: NSRange(location:21,length:5))
+            myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.init(cgColor: #colorLiteral(red: 0.5019607843, green: 0.9882352941, blue: 0.4156862745, alpha: 1)), range: NSRange(location:21,length:5))
             dogWeightInfoLabel.attributedText = myMutableString
             dogWeightInfoLabel.text = infoString
             //            weightSlider.thumbTintColor = UIColor(displayP3Red: CGFloat(weightSlider.value / 100), green: 1, blue: CGFloat(weightSlider.value / 100), alpha: 1)
@@ -108,9 +109,9 @@ class WeightViewController: UIViewController {
             weightSlider.minimumValue = 63
             weightSlider.maximumValue = 81.5
         }
-        underweightAmountLabel.text = "\(weightSlider.minimumValue)"
-        overweightAmountLabel.text = "\(weightSlider.maximumValue)"
-        idealAmountLabel.text = "\(weightSlider.minimumValue + (weightSlider.maximumValue - weightSlider.minimumValue)/2)"
+        underweightAmountLabel.text = "\(weightSlider.minimumValue) kg"
+        overweightAmountLabel.text = "\(weightSlider.maximumValue) kg"
+        idealAmountLabel.text = "\(weightSlider.minimumValue + (weightSlider.maximumValue - weightSlider.minimumValue)/2) kg"
         
     }
     
@@ -124,8 +125,8 @@ class WeightViewController: UIViewController {
         dogBreedLabel.text = dogs[currentDog].breed
         
         chartView.backgroundColor = .white
-        chartView.layer.borderWidth = 2.0
-        chartView.layer.borderColor = UIColor.blue.cgColor
+//        chartView.layer.borderWidth = 2.0
+//        chartView.layer.borderColor = UIColor.blue.cgColor
         chart = ChartView(frame: CGRect(x: 0, y: 0, width: chartView.frame.maxX, height: 300))
         
         self.chartView.addSubview(chart!)

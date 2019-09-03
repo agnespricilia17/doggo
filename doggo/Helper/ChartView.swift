@@ -77,7 +77,7 @@ class ChartView: UIView {
         }
         
         /// Create the text above the bar, inside the top bubble
-        mainLayer.addTextLayer(frame: barEntry.topBubbleEntry.textValueFrame, color: UIColor.white.cgColor, fontSize: 14, text: barEntry.data.textValue, animated: animated, oldFrame: oldEntry?.topBubbleEntry.textValueFrame)
+        mainLayer.addTextLayer(frame: barEntry.topBubbleEntry.textValueFrame, color: UIColor.white.cgColor, fontSize: 13, text: barEntry.data.textValue, animated: animated, oldFrame: oldEntry?.topBubbleEntry.textValueFrame)
         
         /// Create the line that connect top of the bar to the top bubble
         mainLayer.addLineLayer(lineSegment: barEntry.linkingLine, color: cgColor, width: 2.0, isDashed: false, animated: animated, oldSegment: oldEntry?.linkingLine)

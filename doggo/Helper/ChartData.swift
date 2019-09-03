@@ -64,7 +64,7 @@ struct MainBarEntry {
 }
 
 struct TopBubbleEntry {
-    private let topBubbleRadius: CGFloat = 20.0
+    private let topBubbleRadius: CGFloat = 22.5
     private var curvedValue: CGFloat {
         /// This curveValue helps to create 2 control points that can be used to draw a quater of a circle using Bezier curve function
         return 0.552284749831 * topBubbleRadius
