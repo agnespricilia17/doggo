@@ -117,6 +117,9 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
             if valueFoodSchedule2 != "" {
                 foodScheduleSecondaryLabel.text = "\(valueFoodSchedule2)  \(valueFoodSchedule3)  \(valueFoodSchedule4)"
             }
+            else {
+                foodScheduleSecondaryLabel.text = ""
+            }
             foodScheduleMainLabel.text = "\(valueFoodSchedule1)"
         }else{
             foodScheduleSecondaryLabel.text = "00:00  00:00  00:00"

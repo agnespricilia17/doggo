@@ -51,6 +51,9 @@ class AddCheckUpScheduleViewController: UIViewController {
                 self.navigationController?.popViewController(animated: true)
         }))
         
+        let not = NotificationHelper()
+        
+        not.scheduleTimedNotification(data: NotificationData(title: "Am I okay?", content: "Henlo, i’m not feeling gewd!🤢 Bwing me to the doctor pwease!", duration: nil, isRepeating: false),isActionable: true, date: checkUpDatePicker.date)
         self.present(alert, animated: true)
         
     }

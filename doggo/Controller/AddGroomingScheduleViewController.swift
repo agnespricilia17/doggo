@@ -52,6 +52,10 @@ class AddGroomingScheduleViewController: UIViewController {
                 self.navigationController?.popViewController(animated: true)
         }))
         
+        
+        let not = NotificationHelper()
+        
+        not.scheduleTimedNotification(data: NotificationData(title: "I'm smelly", content: "Hooman! I’m dewty!💩 Pwease make me fabulous!💅🏻 ", duration: nil, isRepeating: false),isActionable: true, date: groomingDatePicker.date)
         self.present(alert, animated: true)
         
     }

@@ -94,6 +94,11 @@ class AddFoodScheduleViewController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }))
         
+        
+        let not = NotificationHelper()
+        
+        not.scheduleTimedNotification(data: NotificationData(title: "Feed me!", content: "Henlo! It’s time for me to eat. Pwease give me some food!😞 ", duration: nil, isRepeating: false),isActionable: true, date: foodDatePicker.date)
+        
         self.present(alert, animated: true)
         
     }
