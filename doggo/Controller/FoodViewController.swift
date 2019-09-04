@@ -35,6 +35,9 @@ class FoodViewController: UIViewController {
     var minimumValue:Float = 0
     var maximumValue:Float = 0
     
+    var startCurrentWeight:Float = 0
+    var startIdealWeight:Float = 0
+    var idealWeight:Float = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Food"
@@ -92,8 +95,7 @@ class FoodViewController: UIViewController {
         print(currentWeight)
         print(maximumValue)
         print(yChange)
-        print("\(minimumValue + (maximumValue-minimumValue)/2)")
-        weightNumberLabel.text = "Weight \(minimumValue + (maximumValue-minimumValue)/2) kg"
+        idealWeight = minimumValue + (maximumValue-minimumValue)/2
 
         if yChange > 432 {
             yChange = 432
@@ -158,8 +160,14 @@ class FoodViewController: UIViewController {
                 cupNumberLabel.text = "1.5 cup | 192 g"
             }
         }
+        let displayLink = CADisplayLink(target: self, selector: #selector(self.handleUpdate))
+        displayLink.add(to: .main, forMode: .default)
         // Do any additional setup after loading the view.
         UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
+            
+            //animasi angka naek
+            
+            
             self.weightNumberCurrentLabel.frame.origin.y -= CGFloat(self.yChange)
             self.weightIndicatorLabel.frame.origin.y -= CGFloat(self.yChange)
             self.indicatorToTheRightImageView.frame.origin.y -= CGFloat(self.yChange)
@@ -195,6 +203,18 @@ class FoodViewController: UIViewController {
         
 //        weightLabel.frame.offsetBy(dx: 0, dy: CGFloat(passedWeight))
         
+    }
+    @objc func handleUpdate(){
+        self.weightNumberLabel.text = "Weight \(startIdealWeight) kg"
+        startIdealWeight += 0.1
+        if Float(startIdealWeight) > idealWeight{
+            weightNumberLabel.text = "Weight \(idealWeight) kg"
+        }
+        self.weightNumberCurrentLabel.text = "Weight \(startCurrentWeight) kg"
+        startCurrentWeight += 0.1
+        if Float(startCurrentWeight) > Float(currentWeight){
+            weightNumberCurrentLabel.text = "Weight \(currentWeight) kg"
+        }
     }
     
 
