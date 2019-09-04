@@ -18,8 +18,6 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var dogScrollView: UIScrollView!
     @IBOutlet weak var dogPageControl: UIPageControl!
-    @IBOutlet weak var bubbleMessage: UILabel!
-    @IBOutlet weak var bubbleView: UIView!
     
     @IBOutlet weak var foodButton: UIButton!
     @IBOutlet weak var groomingButton: UIButton!
@@ -66,15 +64,13 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         dogScrollView.delegate = self
         slides = createSlides()
         setupSlideScrollView(slides: slides)
-        
+        // Set up page control
         dogPageControl.numberOfPages = slides.count
         view.bringSubviewToFront(dogPageControl)
         
         // Bringing all the elements in front of the new scrollview xib
         view.bringSubviewToFront(dogName)
         view.bringSubviewToFront(dogBreed)
-        view.bringSubviewToFront(bubbleMessage)
-        view.bringSubviewToFront(bubbleView)
         view.bringSubviewToFront(scheduleLabel)
         view.bringSubviewToFront(foodButton)
         view.bringSubviewToFront(groomingButton)
@@ -157,8 +153,6 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    
-    
     func setDogName(name: String, breed: String) {
         dogName.text = name
         dogBreed.text = breed
@@ -197,6 +191,24 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
             slide.yellowBackground.layer.cornerRadius = slide.yellowBackground.frame.width/2
             slide.dogName = dog.name
             slide.dogBreed = dog.breed
+            
+//            if dog.size! == "Toy" {
+//                slide.bubbleView.frame.origin.y = 280
+//                slide.bubbleLabel.frame.origin.y = 280
+//            }
+//            else if dog.size! == "Small" {
+//                slide.bubbleView.frame.origin.y = 260
+//                slide.bubbleLabel.frame.origin.y = 260
+//            }
+//            else if dog.size! == "Medium" {
+//                slide.bubbleView.frame.origin.y = 240
+//                slide.bubbleLabel.frame.origin.y = 240
+//            }
+//            else if dog.size! == "Large" {
+//                slide.bubbleView.frame.origin.y = 220
+//                slide.bubbleLabel.frame.origin.y = 220
+//            }
+            
             dogSlides.append(slide)
         }
         print(dogSlides)
@@ -215,6 +227,24 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
             dogScrollView.addSubview(slides[i])
+            
+            // Set up bubble
+            slides[i].bubbleView.image = UIImage(named: "speech bubble")
+            slides[i].bubbleLabel.text = "Feed me bitj"
+            //slides[i].bringSubviewToFront(slides[i].bubbleLabel)
+            
+            if dogs[i].size! == "Toy" {
+                slides[i].bubbleView.frame.origin.y = 255
+            }
+            else if dogs[i].size! == "Small" {
+                slides[i].bubbleView.frame.origin.y = 235
+            }
+            else if dogs[i].size! == "Medium" {
+                slides[i].bubbleView.frame.origin.y = 185
+            }
+            else if dogs[i].size! == "Large" {
+                slides[i].bubbleView.frame.origin.y = 165
+            }
         }
     }
     
@@ -222,8 +252,8 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         dogPageControl.currentPage = Int(pageIndex)
         currentDog = dogPageControl.currentPage
-        let currentDog = slides[dogPageControl.currentPage]
-        setDogName(name: currentDog.dogName, breed: currentDog.dogBreed)
+        let currentChosenDog = slides[dogPageControl.currentPage]
+        setDogName(name: currentChosenDog.dogName, breed: currentChosenDog.dogBreed)
         
         let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
         let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
@@ -237,68 +267,76 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+    }
+    
 //////////////////////////////////////////////////////////////////////
     
     
-    func createBubbleShape(view: UIView) {
-        let width = view.frame.width
-        let height = view.frame.height
-        
-        let bubbleLayer = CAShapeLayer()
-        
-        // Create the path to make bubble
-        let bezierPath = UIBezierPath()
-        
-        bezierPath.move(to: CGPoint(x: 22, y: height))
-        bezierPath.addLine(to: CGPoint(x: width - 17, y: height))
-        bezierPath.addCurve(to: CGPoint(x: width, y: height - 17), controlPoint1: CGPoint(x: width - 7.61, y: height), controlPoint2: CGPoint(x: width, y: height - 7.61))
-        bezierPath.addLine(to: CGPoint(x: width, y: 17))
-        bezierPath.addCurve(to: CGPoint(x: width - 17, y: 0), controlPoint1: CGPoint(x: width, y: 7.61), controlPoint2: CGPoint(x: width - 7.61, y: 0))
-        bezierPath.addLine(to: CGPoint(x: 21, y: 0))
-        bezierPath.addCurve(to: CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 11.61, y: 0), controlPoint2: CGPoint(x: 4, y: 7.61))
-        bezierPath.addLine(to: CGPoint(x: 4, y: height - 11))
-        bezierPath.addCurve(to: CGPoint(x: 0, y: height), controlPoint1: CGPoint(x: 4, y: height - 1), controlPoint2: CGPoint(x: 0, y: height))
-        bezierPath.addLine(to: CGPoint(x: -0.05, y: height - 0.01))
-        bezierPath.addCurve(to: CGPoint(x: 11.04, y: height - 4.04), controlPoint1: CGPoint(x: 4.07, y: height + 0.43), controlPoint2: CGPoint(x: 8.16, y: height - 1.06))
-        bezierPath.addCurve(to: CGPoint(x: 22, y: height), controlPoint1: CGPoint(x: 16, y: height), controlPoint2: CGPoint(x: 19, y: height))
-        
-        
-        bezierPath.close()
-        bezierPath.fill()
-        
-        bubbleLayer.strokeColor = UIColor.red.cgColor
-        bubbleLayer.lineWidth = 3
-        bubbleLayer.fillColor = UIColor.clear.cgColor
-        bubbleLayer.path = bezierPath.cgPath
-        
-        view.layer.addSublayer(bubbleLayer)
-        view.bringSubviewToFront(bubbleMessage)
-    }
-    
-    // Create bubble message; *set for daily random message*
-    func produceBubbleMessage(text: String) {
-        //  bubbleMessage.numberOfLines = 0
-        //  bubbleMessage.font = UIFont.systemFont(ofSize: 14)
-        //  bubbleMessage.textColor = .black
-        bubbleMessage.text = text
-        
-        let constraintRect = CGSize(width: 0.66 * view.frame.width,
-                                    height: .greatestFiniteMagnitude)
-        let boundingBox = text.boundingRect(with: constraintRect,
-                                            options: .usesLineFragmentOrigin,
-                                            attributes: [.font: bubbleMessage.font!],
-                                            context: nil)
-        bubbleMessage.frame.size = CGSize(width: ceil(boundingBox.width),
-                                  height: ceil(boundingBox.height))
-        
-    //  let bubbleSize = CGSize(width: bubbleMessage.frame.width + 2,
-    //                                height: bubbleMessage.frame.height + 2)
-    //
-    //  bubbleView.frame.size = bubbleSize
-        
-    //  bubbleMessage.center = bubbleView.center
-        print(bubbleMessage.text)
-    }
+//    func createBubbleShape(view: UIView) {
+//        let width = view.frame.width
+//        let height = view.frame.height
+//
+//        let bubbleLayer = CAShapeLayer()
+//
+//        // Create the path to make bubble
+//        let bezierPath = UIBezierPath()
+//
+//        bezierPath.move(to: CGPoint(x: 22, y: height))
+//        bezierPath.addLine(to: CGPoint(x: width - 17, y: height))
+//        bezierPath.addCurve(to: CGPoint(x: width, y: height - 17), controlPoint1: CGPoint(x: width - 7.61, y: height), controlPoint2: CGPoint(x: width, y: height - 7.61))
+//        bezierPath.addLine(to: CGPoint(x: width, y: 17))
+//        bezierPath.addCurve(to: CGPoint(x: width - 17, y: 0), controlPoint1: CGPoint(x: width, y: 7.61), controlPoint2: CGPoint(x: width - 7.61, y: 0))
+//        bezierPath.addLine(to: CGPoint(x: 21, y: 0))
+//        bezierPath.addCurve(to: CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 11.61, y: 0), controlPoint2: CGPoint(x: 4, y: 7.61))
+//        bezierPath.addLine(to: CGPoint(x: 4, y: height - 11))
+//        bezierPath.addCurve(to: CGPoint(x: 0, y: height), controlPoint1: CGPoint(x: 4, y: height - 1), controlPoint2: CGPoint(x: 0, y: height))
+//        bezierPath.addLine(to: CGPoint(x: -0.05, y: height - 0.01))
+//        bezierPath.addCurve(to: CGPoint(x: 11.04, y: height - 4.04), controlPoint1: CGPoint(x: 4.07, y: height + 0.43), controlPoint2: CGPoint(x: 8.16, y: height - 1.06))
+//        bezierPath.addCurve(to: CGPoint(x: 22, y: height), controlPoint1: CGPoint(x: 16, y: height), controlPoint2: CGPoint(x: 19, y: height))
+//
+//
+//        bezierPath.close()
+//        bezierPath.fill()
+//
+//        bubbleLayer.strokeColor = UIColor.red.cgColor
+//        bubbleLayer.lineWidth = 3
+//        bubbleLayer.fillColor = UIColor.clear.cgColor
+//        bubbleLayer.path = bezierPath.cgPath
+//
+//        view.layer.addSublayer(bubbleLayer)
+//        view.bringSubviewToFront(bubbleMessage)
+//    }
+//
+//    // Create bubble message; *set for daily random message*
+//    func produceBubbleMessage(text: String) {
+//        //  bubbleMessage.numberOfLines = 0
+//        //  bubbleMessage.font = UIFont.systemFont(ofSize: 14)
+//        //  bubbleMessage.textColor = .black
+//        bubbleMessage.text = text
+//
+//        let constraintRect = CGSize(width: 0.66 * view.frame.width,
+//                                    height: .greatestFiniteMagnitude)
+//        let boundingBox = text.boundingRect(with: constraintRect,
+//                                            options: .usesLineFragmentOrigin,
+//                                            attributes: [.font: bubbleMessage.font!],
+//                                            context: nil)
+//        bubbleMessage.frame.size = CGSize(width: ceil(boundingBox.width),
+//                                  height: ceil(boundingBox.height))
+//
+//    //  let bubbleSize = CGSize(width: bubbleMessage.frame.width + 2,
+//    //                                height: bubbleMessage.frame.height + 2)
+//    //
+//    //  bubbleView.frame.size = bubbleSize
+//
+//    //  bubbleMessage.center = bubbleView.center
+//        print(bubbleMessage.text)
+//    }
 
     
     /*

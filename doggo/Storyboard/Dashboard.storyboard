@@ -142,19 +142,6 @@
                                 <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alo-cj-okn">
-                                <rect key="frame" x="243" y="209" width="151" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H8-9L-nSO">
-                                        <rect key="frame" x="38" y="30" width="0.0" height="0.0"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bone" translatesAutoresizingMaskIntoConstraints="NO" id="etQ-A5-68j">
                                 <rect key="frame" x="42" y="534" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -181,8 +168,6 @@
                     <tabBarItem key="tabBarItem" title="Home" image="tab" id="DQD-Us-YKV"/>
                     <navigationItem key="navigationItem" title="Home" id="phn-3e-19f"/>
                     <connections>
-                        <outlet property="bubbleMessage" destination="9H8-9L-nSO" id="q6Z-UA-Zdi"/>
-                        <outlet property="bubbleView" destination="alo-cj-okn" id="3KQ-Vu-gSY"/>
                         <outlet property="checkUpButton" destination="4Ra-sW-ICG" id="OON-I5-jot"/>
                         <outlet property="checkUpIcon" destination="pW6-tJ-XEn" id="OvT-0W-3ey"/>
                         <outlet property="checkUpIconLabel" destination="zRX-Uy-BsT" id="NjU-R3-Mmp"/>

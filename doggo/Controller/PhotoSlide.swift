@@ -20,6 +20,8 @@ class PhotoSlide: UIView {
 
     @IBOutlet weak var dogImage: UIImageView!
     @IBOutlet weak var yellowBackground: UIView!
+    @IBOutlet weak var bubbleView: UIImageView!
+    @IBOutlet weak var bubbleLabel: UILabel!
     
     var dogName:String!
     var dogBreed:String!
