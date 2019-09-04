@@ -205,15 +205,20 @@ class FoodViewController: UIViewController {
         
     }
     @objc func handleUpdate(){
-        self.weightNumberLabel.text = "Weight \(startIdealWeight) kg"
+        self.weightNumberLabel.text = String(format: "Weight %.1f kg",startIdealWeight)
+        "Weight \(startIdealWeight) kg"
         startIdealWeight += 0.1
+        
         if Float(startIdealWeight) > idealWeight{
             weightNumberLabel.text = "Weight \(idealWeight) kg"
         }
-        self.weightNumberCurrentLabel.text = "Weight \(startCurrentWeight) kg"
+        
+        self.weightNumberCurrentLabel.text = String(format: "Weight %.1f kg",startCurrentWeight)
+
+//        self.weightNumberCurrentLabel.text = "Weight \(startCurrentWeight) kg"
         startCurrentWeight += 0.1
         if Float(startCurrentWeight) > Float(currentWeight){
-            weightNumberCurrentLabel.text = "Weight \(currentWeight) kg"
+            weightNumberCurrentLabel.text = String(format: "Weight %.1f kg",currentWeight)
         }
     }
     
