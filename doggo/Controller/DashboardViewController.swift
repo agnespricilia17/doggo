@@ -234,15 +234,33 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
             //slides[i].bringSubviewToFront(slides[i].bubbleLabel)
             
             if dogs[i].size! == "Toy" {
+                if dogs[i].breed! == "Pomeranian" || dogs[i].breed! == "Maltese" {
+                    slides[i].bubbleView.frame.origin.x -= 24
+                }
+                
                 slides[i].bubbleView.frame.origin.y = 255
             }
             else if dogs[i].size! == "Small" {
-                slides[i].bubbleView.frame.origin.y = 235
+//                if dogs[i].breed! == "Beagle" {
+//                    slides[i].bubbleView.frame.origin.x -= 16
+//                }
+                
+                slides[i].bubbleView.frame.origin.y = 230
             }
             else if dogs[i].size! == "Medium" {
+                if dogs[i].breed! == "Border Collie" {
+                    slides[i].bubbleView.frame.origin.x -= 16
+                }
+                else if dogs[i].breed! == "German Shepherd" {
+                    slides[i].bubbleView.frame.origin.x -= 20
+                }
+                
                 slides[i].bubbleView.frame.origin.y = 185
             }
             else if dogs[i].size! == "Large" {
+                if dogs[i].breed! == "St. Bernard" {
+                    slides[i].bubbleView.frame.origin.x -= 8
+                }
                 slides[i].bubbleView.frame.origin.y = 165
             }
         }

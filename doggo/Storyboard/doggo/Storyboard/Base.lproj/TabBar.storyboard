@@ -21,7 +21,6 @@
                     <connections>
                         <segue destination="mqv-CK-UFt" kind="relationship" relationship="viewControllers" id="hzT-bZ-Yec"/>
                         <segue destination="hJM-GS-Wge" kind="relationship" relationship="viewControllers" id="JRb-tL-8Jz"/>
-                        <segue destination="9mj-ZD-7Er" kind="relationship" relationship="viewControllers" id="WCt-Eu-FIt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWR-nf-iRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,16 +36,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYs-Uc-Ch6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2286" y="2003"/>
-        </scene>
-        <!--Train-->
-        <scene sceneID="1oW-lX-ao0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Train" id="9mj-ZD-7Er" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VXJ-er-FBB"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JOd-19-A8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2286" y="2458"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="5bs-Vc-3Z7">

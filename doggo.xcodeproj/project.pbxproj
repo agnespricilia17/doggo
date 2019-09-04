@@ -12,14 +12,12 @@
 		1E2C0AC8231525D30034801A /* AddCheckUpScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C0AC7231525D30034801A /* AddCheckUpScheduleViewController.swift */; };
 		1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACEC042314E4C900D88164 /* PhotoSlide.swift */; };
 		1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACEC062314E4FC00D88164 /* PhotoSlide.xib */; };
-		8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */; };
 		8AFFC0A3231CC330004E84A7 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */; };
 		8AFFC0A6231E0DDA004E84A7 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFFC0A4231E0DDA004E84A7 /* TabBar.storyboard */; };
 		9211A1F0230EFB6500614EED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1EF230EFB6500614EED /* Onboarding.storyboard */; };
 		9211A1FC230EFCA800614EED /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FB230EFCA800614EED /* Health.storyboard */; };
 		9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A1FF230F002700614EED /* LaunchScreen.storyboard */; };
 		9211A204230F002700614EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A201230F002700614EED /* Main.storyboard */; };
-		9211A209230F010400614EED /* Train.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A208230F010400614EED /* Train.storyboard */; };
 		9211A214230F034C00614EED /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9211A213230F034C00614EED /* Dashboard.storyboard */; };
 		9211A216230F885700614EED /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C524EFC5230CFD9B00EAE665 /* SlideView.xib */; };
 		9211A275231389B700614EED /* DogChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211A274231389B700614EED /* DogChartData.swift */; };
@@ -45,7 +43,6 @@
 		E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6F289A2230B878600784315 /* doggo.xcdatamodeld */; };
 		E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B5230BD3DE00784315 /* DashboardViewController.swift */; };
 		E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B7230BD3ED00784315 /* HealthViewController.swift */; };
-		E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289B9230BD3FB00784315 /* TrainViewController.swift */; };
 		E6F289BC230BD41000784315 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289BB230BD41000784315 /* RegisterViewController.swift */; };
 		E6F289BE230BD4D000784315 /* ChooseBreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289BD230BD4D000784315 /* ChooseBreedViewController.swift */; };
 		E6F289C0230BD4F100784315 /* AddNewDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */; };
@@ -55,11 +52,7 @@
 		E6F289C8230BD54D00784315 /* CheckUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289C7230BD54D00784315 /* CheckUpViewController.swift */; };
 		E6F289CC230BDC9A00784315 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CB230BDC9A00784315 /* DogModel.swift */; };
 		E6F289CE230BDCA700784315 /* WeightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CD230BDCA700784315 /* WeightModel.swift */; };
-		E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289CF230BDCAF00784315 /* FoodModel.swift */; };
-		E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D1230BDCB700784315 /* CheckUpModel.swift */; };
-		E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D3230BDCC300784315 /* TrainModel.swift */; };
 		E6F289D6230BDCD600784315 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D5230BDCD600784315 /* CoreDataHelper.swift */; };
-		E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D7230BDCEA00784315 /* VideoHelper.swift */; };
 		E6F289DA230BDD1C00784315 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F289D9230BDD1C00784315 /* NotificationHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,14 +63,12 @@
 		1E2C0AC7231525D30034801A /* AddCheckUpScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCheckUpScheduleViewController.swift; sourceTree = "<group>"; };
 		1EACEC042314E4C900D88164 /* PhotoSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSlide.swift; sourceTree = "<group>"; };
 		1EACEC062314E4FC00D88164 /* PhotoSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSlide.xib; sourceTree = "<group>"; };
-		8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		8AFFC0A2231CC330004E84A7 /* AddWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeightViewController.swift; sourceTree = "<group>"; };
 		8AFFC0A5231E0DDA004E84A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = doggo/Storyboard/Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		9211A1EF230EFB6500614EED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		9211A1FB230EFCA800614EED /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
 		9211A200230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9211A202230F002700614EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9211A208230F010400614EED /* Train.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Train.storyboard; sourceTree = "<group>"; };
 		9211A213230F034C00614EED /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		9211A274231389B700614EED /* DogChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogChartData.swift; sourceTree = "<group>"; };
 		9211A276231389D500614EED /* CustomSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
@@ -105,7 +96,6 @@
 		E6F289AA230B878700784315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F289B5230BD3DE00784315 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		E6F289B7230BD3ED00784315 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
-		E6F289B9230BD3FB00784315 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 		E6F289BB230BD41000784315 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E6F289BD230BD4D000784315 /* ChooseBreedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBreedViewController.swift; sourceTree = "<group>"; };
 		E6F289BF230BD4F100784315 /* AddNewDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewDogViewController.swift; sourceTree = "<group>"; };
@@ -115,11 +105,7 @@
 		E6F289C7230BD54D00784315 /* CheckUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpViewController.swift; sourceTree = "<group>"; };
 		E6F289CB230BDC9A00784315 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		E6F289CD230BDCA700784315 /* WeightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightModel.swift; sourceTree = "<group>"; };
-		E6F289CF230BDCAF00784315 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
-		E6F289D1230BDCB700784315 /* CheckUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUpModel.swift; sourceTree = "<group>"; };
-		E6F289D3230BDCC300784315 /* TrainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainModel.swift; sourceTree = "<group>"; };
 		E6F289D5230BDCD600784315 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		E6F289D7230BDCEA00784315 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		E6F289D9230BDD1C00784315 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,9 +166,6 @@
 			children = (
 				E6F289CB230BDC9A00784315 /* DogModel.swift */,
 				E6F289CD230BDCA700784315 /* WeightModel.swift */,
-				E6F289CF230BDCAF00784315 /* FoodModel.swift */,
-				E6F289D1230BDCB700784315 /* CheckUpModel.swift */,
-				E6F289D3230BDCC300784315 /* TrainModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,8 +177,6 @@
 				1EACEC062314E4FC00D88164 /* PhotoSlide.xib */,
 				E6F289B5230BD3DE00784315 /* DashboardViewController.swift */,
 				E6F289B7230BD3ED00784315 /* HealthViewController.swift */,
-				E6F289B9230BD3FB00784315 /* TrainViewController.swift */,
-				8AFFC09E230F9767004E84A7 /* TrainDetailViewController.swift */,
 				E6F289BB230BD41000784315 /* RegisterViewController.swift */,
 				E6F289BD230BD4D000784315 /* ChooseBreedViewController.swift */,
 				E6F289C1230BD52100784315 /* FoodViewController.swift */,
@@ -220,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				E6F289D5230BDCD600784315 /* CoreDataHelper.swift */,
-				E6F289D7230BDCEA00784315 /* VideoHelper.swift */,
 				E6F289D9230BDD1C00784315 /* NotificationHelper.swift */,
 				E69E84F623151648008D3037 /* NotificationData.swift */,
 				9211A274231389B700614EED /* DogChartData.swift */,
@@ -241,7 +221,6 @@
 				9211A213230F034C00614EED /* Dashboard.storyboard */,
 				9211A1FF230F002700614EED /* LaunchScreen.storyboard */,
 				8AFFC0A4231E0DDA004E84A7 /* TabBar.storyboard */,
-				9211A208230F010400614EED /* Train.storyboard */,
 				9211A201230F002700614EED /* Main.storyboard */,
 				9211A1FB230EFCA800614EED /* Health.storyboard */,
 				E69E84FE23152333008D3037 /* VetCheck.storyboard */,
@@ -323,7 +302,6 @@
 				E69E84F92315229F008D3037 /* Food.storyboard in Resources */,
 				9211A203230F002700614EED /* LaunchScreen.storyboard in Resources */,
 				9211A216230F885700614EED /* SlideView.xib in Resources */,
-				9211A209230F010400614EED /* Train.storyboard in Resources */,
 				E69E84EF231507CB008D3037 /* Assets.xcassets in Resources */,
 				E69E84FB23152301008D3037 /* Weight.storyboard in Resources */,
 				1EACEC072314E4FC00D88164 /* PhotoSlide.xib in Resources */,
@@ -337,12 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F289D2230BDCB700784315 /* CheckUpModel.swift in Sources */,
 				C524EFC4230CFD8E00EAE665 /* Slide.swift in Sources */,
 				9211A279231389E500614EED /* UIBezierPathExtension.swift in Sources */,
 				9211A27F23138A0F00614EED /* ChartView.swift in Sources */,
 				E6F289CE230BDCA700784315 /* WeightModel.swift in Sources */,
-				E6F289D8230BDCEA00784315 /* VideoHelper.swift in Sources */,
 				E6F289A4230B878600784315 /* doggo.xcdatamodeld in Sources */,
 				E6F289BC230BD41000784315 /* RegisterViewController.swift in Sources */,
 				9211A27B231389F400614EED /* CALayerExtension.swift in Sources */,
@@ -367,15 +343,11 @@
 				9211A28123138A2900614EED /* ChartPresenter.swift in Sources */,
 				E6F289B6230BD3DE00784315 /* DashboardViewController.swift in Sources */,
 				9211A27D23138A0300614EED /* ArrayExtension.swift in Sources */,
-				E6F289D0230BDCAF00784315 /* FoodModel.swift in Sources */,
 				E6F289B8230BD3ED00784315 /* HealthViewController.swift in Sources */,
 				1E2C0AC8231525D30034801A /* AddCheckUpScheduleViewController.swift in Sources */,
-				E6F289D4230BDCC300784315 /* TrainModel.swift in Sources */,
-				E6F289BA230BD3FB00784315 /* TrainViewController.swift in Sources */,
 				C524EFC2230CFD6900EAE665 /* OnboardingViewController.swift in Sources */,
 				1E2C0AC6231525C80034801A /* AddGroomingScheduleViewController.swift in Sources */,
 				1EACEC052314E4C900D88164 /* PhotoSlide.swift in Sources */,
-				8AFFC09F230F9767004E84A7 /* TrainDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
