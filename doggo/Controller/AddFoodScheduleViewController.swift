@@ -12,6 +12,11 @@ class AddFoodScheduleViewController: UIViewController {
 
     @IBOutlet weak var foodDatePicker: UIDatePicker!
     
+    @IBOutlet weak var timeTitle1: UILabel!
+    @IBOutlet weak var timeTitle2: UILabel!
+    @IBOutlet weak var timeTitle3: UILabel!
+    @IBOutlet weak var timeTitle4: UILabel!
+    
     @IBOutlet weak var timeButton1: UIButton!
     @IBOutlet weak var timeButton2: UIButton!
     @IBOutlet weak var timeButton3: UIButton!
@@ -27,6 +32,8 @@ class AddFoodScheduleViewController: UIViewController {
     
     var strDate = String()
     
+    var countSet = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,9 +46,25 @@ class AddFoodScheduleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         timeButton1.layer.cornerRadius = timeButton1.frame.height/2.5
+        
+        label2.isEnabled = false
+        timeTitle2.isEnabled = false
         timeButton2.layer.cornerRadius = timeButton2.frame.height/2.5
+        timeButton2.isEnabled = false
+        timeButton2.alpha = 0.4
+        
+        label3.isEnabled = false
+        timeTitle3.isEnabled = false
         timeButton3.layer.cornerRadius = timeButton3.frame.height/2.5
+        timeButton3.isEnabled = false
+        timeButton3.alpha = 0.4
+        
+        label4.isEnabled = false
+        timeTitle4.isEnabled = false
         timeButton4.layer.cornerRadius = timeButton4.frame.height/2.5
+        timeButton4.isEnabled = false
+        timeButton4.alpha = 0.4
+        
     }
     
     @objc func saveFoodSchedule() {
@@ -79,26 +102,28 @@ class AddFoodScheduleViewController: UIViewController {
         strDate = timeFormatter.string(from: foodDatePicker.date)
         print(strDate)
         
-        if focusedView == 3 {
+        if focusedView == 3 || (countSet == 3 && label4.isEnabled == true) {
 //            timeButton4.titleLabel?.text = strDate
 //            timeButton4.titleLabel?.textAlignment = .center
             label4.text = strDate
         }
-        else if focusedView == 2 {
+        else if focusedView == 2 || (countSet == 2 && label3.isEnabled == true) {
 //            timeButton3.titleLabel?.text = strDate
 //            timeButton3.titleLabel?.textAlignment = .center
             label3.text = strDate
         }
-        else if focusedView == 1 {
+        else if focusedView == 1 || (countSet == 1 && label2.isEnabled == true) {
 //            timeButton2.titleLabel?.text = strDate
 //            timeButton2.titleLabel?.textAlignment = .center
             label2.text = strDate
         }
-        else if focusedView == 0{
+        else if focusedView == 0 {
 //            timeButton1.titleLabel?.text = strDate
 //            timeButton1.titleLabel?.textAlignment = .center
             label1.text = strDate
         }
+
+        enableAdditionalSchedule()
     }
     
     @IBAction func timeButton1Tapped(_ sender: UIButton) {
@@ -135,6 +160,39 @@ class AddFoodScheduleViewController: UIViewController {
         timeButton2.layer.borderColor = UIColor.clear.cgColor
         timeButton3.layer.borderColor = UIColor.clear.cgColor
         timeButton1.layer.borderColor = UIColor.clear.cgColor
+    }
+    
+    func enableAdditionalSchedule() {
+        // Validate if user has chosen at least the 1st schedule
+        if label1.text != "" && countSet == 0 {
+            timeButton2.alpha = 1.0
+            timeButton2.isEnabled = true
+            
+            countSet += 1
+        }
+        // Validate for further adding schedule
+        else if label2.text != "" && countSet == 1 {
+            timeTitle2.isEnabled = true
+            label2.isEnabled = true
+            timeButton3.isEnabled = true
+            timeButton3.alpha =  1.0
+            
+            countSet += 1
+        }
+        else if label3.text != "" && countSet == 2 {
+            timeTitle3.isEnabled = true
+            label3.isEnabled = true
+            timeButton4.isEnabled = true
+            timeButton4.alpha = 1.0
+            
+            countSet += 1
+        }
+        else if label4.text != "" && countSet == 3 {
+            timeTitle4.isEnabled = true
+            label4.isEnabled = true
+            
+            countSet += 1
+        }
     }
     
 

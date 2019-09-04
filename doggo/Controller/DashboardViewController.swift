@@ -60,7 +60,7 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
 //        }
         
         // Setting up initial dog's name and breed
-        setDogName(name: dogs[0].name!, breed: dogs[0].breed!)
+        setDogName(name: dogs[dogPageControl.currentPage].name!, breed: dogs[dogPageControl.currentPage].breed!)
         
         // Setting up scroll view for dog lists
         dogScrollView.delegate = self
@@ -68,7 +68,6 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         setupSlideScrollView(slides: slides)
         
         dogPageControl.numberOfPages = slides.count
-        dogPageControl.currentPage = 0
         view.bringSubviewToFront(dogPageControl)
         
         // Bringing all the elements in front of the new scrollview xib
@@ -119,10 +118,12 @@ class DashboardViewController: UIViewController, UIScrollViewDelegate {
         let userFoodSchedule4 = Foundation.UserDefaults.standard
         let valueFoodSchedule4 = userFoodSchedule4.string(forKey: "Food 4") ?? ""
         if valueFoodSchedule1 != ""{
-            foodScheduleSecondaryLabel.text = " \(valueFoodSchedule2), \(valueFoodSchedule3), \(valueFoodSchedule4)"
+            if valueFoodSchedule2 != "" {
+                foodScheduleSecondaryLabel.text = "\(valueFoodSchedule2)  \(valueFoodSchedule3)  \(valueFoodSchedule4)"
+            }
             foodScheduleMainLabel.text = "\(valueFoodSchedule1)"
         }else{
-            foodScheduleSecondaryLabel.text = "00:00, 00:00, 00:00"
+            foodScheduleSecondaryLabel.text = "00:00  00:00  00:00"
             foodScheduleMainLabel.text = "00:00"
         }
         
