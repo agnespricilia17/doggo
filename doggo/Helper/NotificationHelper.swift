@@ -22,10 +22,10 @@ class NotificationHelper {
         notificationContent.badge = 1
         
         if isActionable {
-            let categoryIdentifier = data.title
+            let categoryIdentifier = "okay"
             
             notificationContent.categoryIdentifier = categoryIdentifier
-            let okayAction = UNNotificationAction(identifier: data.title, title: "Okay", options: [])
+            let okayAction = UNNotificationAction(identifier: categoryIdentifier, title: "Okay", options: [])
             let remindLaterAction = UNNotificationAction(identifier: "remindLater", title: "Remind Me Later", options: [.destructive])
             let category = UNNotificationCategory(identifier: categoryIdentifier,
                                                   actions: [okayAction, remindLaterAction],

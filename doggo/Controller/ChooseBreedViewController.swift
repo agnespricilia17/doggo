@@ -17,6 +17,16 @@ class ChooseBreedViewController: UIViewController, UIScrollViewDelegate {
     
     var slides:[breedSlide] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func createSlides() -> [breedSlide] {
         let slide1:breedSlide = Bundle.main.loadNibNamed("breedSlideView", owner: self, options: nil)?.first as! breedSlide
         slide1.breedView.image = UIImage(named: "Beagle")
